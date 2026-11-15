@@ -33,7 +33,7 @@ import torch
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from fast_site import SiteModel, NPAR, bell_theta          # noqa: E402
-from hw_core import prep_ops, sample_copy, site_V_ops, outcome_probs, to_qprog, counts_to_logical  # noqa: E402
+from hw_core import prep_ops, sample_copy, site_V_ops, native_site_ops, product_site_ops, channel_circuit, sample_commutant, pauli_ops, outcome_probs, to_qprog, counts_to_logical  # noqa: E402
 
 torch.set_default_dtype(torch.float64)
 
@@ -87,11 +87,46 @@ def single_copy_visibility(theta, n):
     return max(out)
 
 
-def front_end_ops(theta, n):
+def front_end_ops(theta, n, frontend="site13"):
     ops = []
     for i in range(n):
-        ops += site_V_ops(theta, i, n + i)
+        ops += product_site_ops(theta, i, n + i) if frontend == "product6" else site_V_ops(theta, i, n + i)
     return ops
+
+
+# front-end families: number of stored angles and the angles that are trained
+FRONTENDS = dict(site13=(13, list(range(13))),            # paper's agent: Euler, CRX, Euler on every site
+                 product6=(13, list(range(6))),           # single-copy agent: Euler rotations only (CRX and post fixed at 0)
+                 channel26=(26, list(range(26))),         # channel task: input circuit W (13) and measurement V (13)
+                 channel_in13=(13, list(range(13))))      # channel task with the measurement learned on the state task
+                                                          # kept fixed (--fixed_out): only the input circuit W is trained
+
+
+def channel_tables(theta_in, theta_out):
+    """Site tables of the channel task: A[b] (P_i = I) and B[sigma, b], p(b|P) = prod A(b_i) + prod B(P_i, b_i)."""
+    from fast_site import V_of, PAULI, I2
+    CHI = np.array([[1, 1, 1, 1], [1, 1, -1, -1], [1, -1, 1, -1], [1, -1, -1, 1]])
+    W = V_of(np.asarray(theta_in, float)); V = V_of(np.asarray(theta_out, float))
+    psi = W[:, 0]; w = np.outer(psi, psi.conj())
+    rho = [np.kron(PAULI[r], I2) @ w @ np.kron(PAULI[r], I2) for r in range(4)]
+    A = np.real(np.diag(V @ (sum(rho) / 4) @ V.conj().T))
+    B = np.array([np.real(np.diag(V @ (sum(CHI[s_, r] * rho[r] for r in range(4)) / 4) @ V.conj().T)) for s_ in range(4)])
+    return A, B
+
+
+def ideal_info(theta, n, frontend):
+    """Mutual information (bits) between the hidden Pauli and the outcomes of one noiseless pair (n = 2)."""
+    S = SiteModel(n, eps=1.0, twirl=True)
+    if frontend.startswith("channel"):
+        A, B = channel_tables(theta[:13], theta[13:])
+        p = np.ones((S.N, S.D)); q = np.ones((S.N, S.D))
+        for i in range(n):
+            p *= A[S.B[:, i]][None, :]; q *= B[S.P[:, i]][:, S.B[:, i]]
+        p = np.clip(p + q, 1e-15, None)
+    else:
+        p = S.probs(np.asarray(theta, float))
+    p = p / p.sum(1, keepdims=True); pb = p.mean(0)
+    return float((p * np.log2(p / pb[None, :])).sum(1).mean())
 
 
 def site_digits(idx, n):
@@ -346,6 +381,12 @@ def main():
     ap.add_argument("--qpu", default="WK_C180", help="Origin backend name (python list_backends.py prints them)")
     ap.add_argument("--chip", default="", help="calibration snapshot; default runs/chip.json (WK_C180) or runs/chip_<qpu>.json")
     ap.add_argument("--phys", default="", help="comma-separated physical qubits A0..,B0.. (origin); default: best couplers")
+    ap.add_argument("--frontend", choices=list(FRONTENDS), default="site13",
+                    help="site13: paper's agent; product6: single-copy agent (no two-qubit gate); channel26: channel task "
+                         "(the agent prepares the input of a hidden-Pauli channel on system + ancilla and measures)")
+    ap.add_argument("--fixed_out", default="runs/prune.json:train_s20",
+                    help="channel_in13: measurement V kept fixed, 'file.json:agent' (pruned angles from hw_prune.py, "
+                         "applied in native gates)")
     ap.add_argument("--out", required=True)
     a = ap.parse_args()
     if not a.chip:
@@ -357,7 +398,14 @@ def main():
     rng = np.random.default_rng(a.seed)
     dec = Decoder(n, seed=a.seed)
     opt = torch.optim.Adam(dec.parameters(), lr=a.lr_dec)
-    th = rng.uniform(-np.pi, np.pi, NPAR)
+    NP, TRAIN = FRONTENDS[a.frontend]
+    v_fixed = None
+    if a.frontend == "channel_in13":
+        f_, k_ = a.fixed_out.split(":")
+        v_fixed = np.array(json.load(open(os.path.join(HERE, f_) if not os.path.isabs(f_) else f_))["agents"][k_]["theta_pruned"], float)
+    full = (lambda t: np.r_[t, v_fixed]) if v_fixed is not None else (lambda t: t)
+    mask = np.zeros(NP); mask[TRAIN] = 1.0
+    th = rng.uniform(-np.pi, np.pi, NP) * mask
     if a.init == "bell":
         th = bell_theta()
     elif a.init.endswith(".json"):
@@ -371,7 +419,7 @@ def main():
     state = dict(args=vars(a), hist=[], it=0, init=a.init)
     if a.warm_annealed:
         state["anneal_from"] = -100        # warm start from a converged agent: begin at the smallest step size
-    mT = np.zeros(NPAR); vT = np.zeros(NPAR); base = 1.0 / nP
+    mT = np.zeros(NP); vT = np.zeros(NP); base = 1.0 / nP
     if os.path.exists(a.out):                                              # resume
         state = json.load(open(a.out))
         th = np.array(state["theta"]); mT = np.array(state["mT"]); vT = np.array(state["vT"]); base = state["base"]
@@ -415,15 +463,24 @@ def main():
                                                  fe_restart_below=a.fe_restart_below, fe_restart_gain=a.fe_restart_gain))
     for it in range(state["it"] + 1, a.iters + 1):
         rng = np.random.default_rng([a.seed, it, 7])           # per-iteration stream: same circuits after a restart
-        preps = make_preps(n, Ps, a.C, eps, rng, twirl=not a.no_twirl)
-        dirs = [rng.normal(0, a.sigma, NPAR) for _ in range(a.K)]
+        if a.frontend.startswith("channel"):
+            Rs = [sample_commutant(list(P), rng) for P in Ps for _ in range(a.C)]   # the same channel draws for all front-ends
+        else:
+            preps = make_preps(n, Ps, a.C, eps, rng, twirl=not a.no_twirl)
+        dirs = [rng.normal(0, a.sigma, NP) * mask for _ in range(a.K)]
         fronts = [th] + [th + s * d for d in dirs for s in (1, -1)]
         drift = []                                              # injected, known miscalibration (online-adaptation test)
         if a.inject_rz and it >= a.inject_from:
             dA, dB = (float(x) for x in a.inject_rz.split(","))
             for i in range(n):
                 drift += [("RZ", (i,), (dA,)), ("RZ", (n + i,), (dB,))]
-        circuits = [p + drift + front_end_ops(f, n) for f in fronts for p in preps]
+        if a.frontend == "channel26":
+            circuits = [front_end_ops(f[:13], n) + pauli_ops(R, range(n)) + front_end_ops(f[13:], n) for f in fronts for R in Rs]
+        elif a.frontend == "channel_in13":
+            v_ops = [op for i in range(n) for op in native_site_ops(v_fixed, i, n + i)]
+            circuits = [front_end_ops(f, n) + pauli_ops(R, range(n)) + v_ops for f in fronts for R in Rs]
+        else:
+            circuits = [p + drift + front_end_ops(f, n, a.frontend) for f in fronts for p in preps]
         data, info = be.run(circuits, a.S, pending_file=a.out + ".pending.json", it=it)
         block = nP * a.C
         D = [data[i * block:(i + 1) * block] for i in range(len(fronts))]
@@ -436,7 +493,7 @@ def main():
                 b, tgt = episodes(Df, nP, a.C, a.m, a.E, r_)
                 rewards.append(float((act(dec.scores(torch.tensor(b)), r_) == tgt).mean()))
         # front-end: antithetic ES with Adam
-        g = np.zeros(NPAR)
+        g = np.zeros(NP)
         for k, d in enumerate(dirs):
             g += (rewards[1 + 2 * k] - rewards[2 + 2 * k]) / (2 * a.sigma ** 2) * d
         g /= a.K
@@ -465,7 +522,7 @@ def main():
             if (r10 < a.fe_restart_below and it - fr["best_it"] >= a.fe_restart_patience
                     and it - fr["start"] >= a.fe_restart_patience):
                 r_fe = np.random.default_rng([a.seed, it, 13])
-                th = r_fe.uniform(-np.pi, np.pi, NPAR); mT = np.zeros(NPAR); vT = np.zeros(NPAR)
+                th = r_fe.uniform(-np.pi, np.pi, NP) * mask; mT = np.zeros(NP); vT = np.zeros(NP)
                 fr["restarts"].append(it); fr.update(start=it, best=-1.0, best_it=it)
                 state["anneal_from"] = None
                 fe_restart = dict(it=it, r10=r10)
@@ -490,8 +547,12 @@ def main():
             restart.pop("h", None); restart.pop("c", None)
             print(f"    decoder restart at iteration {it}: current {restart['current']:.3f}, fresh {restart['cands']}, "
                   f"{'accepted' if restart['accepted'] else 'kept current'}", flush=True)
-        vis = S_model.visibility(th)
-        rec = dict(it=it, reward=rewards[0], fe_restart=fe_restart, vis_ideal=vis, vis_single=single_copy_visibility(th, n), dec_restart=restart, info={k: v for k, v in info.items() if k != "job_ids"},
+        if a.frontend.startswith("channel"):
+            vis = vis_single = None
+        else:
+            vis = S_model.visibility(th); vis_single = single_copy_visibility(th, n)
+        rec = dict(it=it, reward=rewards[0], fe_restart=fe_restart, vis_ideal=vis, vis_single=vis_single,
+                   info_ideal=ideal_info(full(th), n, a.frontend), dec_restart=restart, info={k: v for k, v in info.items() if k != "job_ids"},
                    t=time.time() - t_start)
         if a.backend == "sim":
             rec["qpu_s_model"] = be.qpu_s
@@ -502,11 +563,13 @@ def main():
             state["best"] = dict(it=it, mean_reward10=float(np.mean(rr)), theta=th.tolist(),
                                  h=dec.h.detach().tolist(), c=dec.c.detach().tolist())
         rec["lr_mult"] = lr_mult
+        if v_fixed is not None:
+            state["theta_out_fixed"] = v_fixed.tolist()
         state.update(it=it, theta=th.tolist(), mT=mT.tolist(), vT=vT.tolist(), base=base,
                      h=dec.h.detach().tolist(), c=dec.c.detach().tolist())
         torch.save(opt.state_dict(), a.out + ".opt.pt")
         json.dump(state, open(a.out, "w"), indent=1, default=str)
-        print(f"it {it:4d}  reward(centre) {rewards[0]:.3f}  ideal two-copy visibility of theta {vis:.3f}  "
+        print(f"it {it:4d}  reward(centre) {rewards[0]:.3f}  ideal information per pair {rec['info_ideal']:.3f} bits  "
               f"{'' if a.backend == 'sim' else 'wall %.0f s qpu %d ms' % (info.get('wall_s', 0), info.get('qpu_ms', 0))}",
               flush=True)
 

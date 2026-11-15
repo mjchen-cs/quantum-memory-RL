@@ -110,6 +110,52 @@ def shadow_circuit(P, eps, rng):
     return ops, dict(bases=bases.tolist())
 
 
+def product_site_ops(theta, a, b):
+    """Single-copy front-end: Euler rotations theta[0:3] on qubit a and theta[3:6] on qubit b, no two-qubit gate."""
+    t = np.asarray(theta, float); ops = []
+    for q, (x, y, z) in ((a, t[0:3]), (b, t[3:6])):
+        ops += [("RZ", (q,), (x,)), ("RY", (q,), (y,)), ("RZ", (q,), (z,))]
+    return ops
+
+
+def sample_commutant(P, rng):
+    """Uniformly random n-qubit Pauli R (per-qubit indices) that commutes with P."""
+    P = np.asarray(P)
+    while True:
+        R = rng.integers(4, size=len(P))
+        anti = sum(1 for p, r in zip(P, R) if p and r and p != r)
+        if anti % 2 == 0:
+            return [int(x) for x in R]
+
+
+PAULI_GATES = {0: [], 1: [("X",)], 2: [("RZ", np.pi), ("X",)], 3: [("RZ", np.pi)]}   # up to global phases
+
+
+def pauli_ops(R, qubits):
+    ops = []
+    for r, q in zip(R, qubits):
+        for g in PAULI_GATES[int(r)]:
+            ops.append((g[0], (q,), (g[1],) if len(g) > 1 else ()))
+    return ops
+
+
+def channel_circuit(P, theta_in, theta_out, rng, native=False, native_out=None):
+    """Channel task: every site (system i, ancilla n+i) starts in |00>, the agent's input circuit W(theta_in) acts on it,
+    the hidden-Pauli channel Lambda_P(rho) = (I + tr(P rho) P)/d acts on the system qubits (realized exactly as a
+    uniformly random Pauli R from the commutant of P), and the agent's measurement circuit V(theta_out) follows."""
+    n = len(P)
+    site_in = native_site_ops if native else site_V_ops
+    site_out = native_site_ops if (native if native_out is None else native_out) else site_V_ops
+    ops = []
+    for i in range(n):
+        ops += site_in(theta_in, i, n + i)
+    R = sample_commutant(P, rng)
+    ops += pauli_ops(R, range(n))
+    for i in range(n):
+        ops += site_out(theta_out, i, n + i)
+    return ops, dict(R=R)
+
+
 # ------------------------------------------------------------------ numpy reference simulator (verification)
 _G1 = {
     "X": np.array([[0, 1], [1, 0]], complex),

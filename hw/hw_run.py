@@ -31,7 +31,7 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from hw_core import quantum_circuit, prep_ops, sample_copy, MEAS, to_qprog, outcome_probs, counts_to_logical, site_V_ops  # noqa
+from hw_core import quantum_circuit, channel_circuit, product_site_ops, prep_ops, sample_copy, MEAS, to_qprog, outcome_probs, counts_to_logical, site_V_ops  # noqa
 
 BACKEND = "WK_C180"
 BATCH = 25
@@ -51,7 +51,9 @@ EXT = dict(DR_T=400, DR_runs=4, DR_q=(0.02, 0.1),      # drift stream: 2 q x 4 r
            DT5_sig=160, DT6_sig=200, DT7_sig=300, DT_null=2000, DTC_sig=3000, DTC_null=3000,   # task 2
            R4_circ=160, R5_circ=320, S5R_circ=320, S6R_circ=400, S7_circ=1000,   # S7: 2 x 16 x 1000 = 32,000   # S5R 20,480 / S6R 25,600 circuits      # 3 x 16 x 160 = 7,680 and 3 x 16 x 320 = 15,360 circuits
            S6X_circ=400,                  # 32 x 400 = 12,800 circuits, about 140 s
-           S5C_P=8, S5C_circ=3500)        # 8 x 3,500 = 28,000 circuits, about 300 s (up to 7,000 copies)
+           S5C_P=8, S5C_circ=3500,        # 8 x 3,500 = 28,000 circuits, about 300 s (up to 7,000 copies)
+           X8_circ=800, X9_circ=1000, X10_circ=1400, X10R_circ=2000,
+           CH5_circ=320, CH6_circ=400)    # channel task: (1 + agents) x 16 x 320 / 400 circuits   # deployment at n = 8-10: 2 x 16 x (800 + 1,000 + 1,400) = 102,400 circuits
 
 
 # ------------------------------------------------------------------ chip snapshot and site selection
@@ -83,9 +85,10 @@ def fetch_chip(backend, out_f):
     print(f"snapshot: {len(snap['available_qubits'])} qubits, {len(two)} couplers -> {out_f}")
 
 
-def choose_sites(chip_f, n):
+def choose_sites(chip_f, n, exclude=()):
     from hw_noise import load_chip, select_sites
     _, s1, f2 = load_chip(chip_f)
+    f2 = {k: v for k, v in f2.items() if k[0] not in exclude and k[1] not in exclude}
     return select_sites(n, s1, f2)
 
 
@@ -278,6 +281,91 @@ def build(step, theta, eps, seed):
                 for r in range(int(os.environ.get("PR_CIRC", EXT["PR7_circ"]))):
                     ops, meta = quantum_circuit(list(P), th, eps, rng, native=True)
                     meta.update(rep=r, policy=pol, native=True)
+                    recs.append(dict(key=f"{step}_{code}_{''.join(map(str, P))}_{r}", n=n, kind="quantum", P=list(P),
+                                     ops=ops, shots=10, meta=meta))
+    elif step == "X10R":
+        # n = 10 repeated on freshly selected couplers (--exclude: the coupler of X10 whose Y/Z correlations had
+        # collapsed), the same 16 Paulis as X10, more circuits per Pauli
+        n = 10
+        m = json.load(open(os.path.join(HERE, "runs", "X10_origin", "manifest.json")))
+        Pset = sorted({tuple(r["P"]) for r in m["records"]})
+        pr = json.load(open(os.path.join(HERE, "runs", "prune.json")))["agents"]
+        fronts = [("bell_native", pr["bell"]["theta_pruned"], "bn"),
+                  ("onchip20_pruned", pr["train_s20"]["theta_pruned"], "p20")]
+        EXTRA_MAN["thetas_extra"] = {k: list(map(float, th)) for k, th, _ in fronts}
+        EXTRA_MAN["native"] = [k for k, _, _ in fronts]
+        for pol, th, code in fronts:
+            th = np.array(th, float)
+            for P in Pset:
+                for r in range(int(os.environ.get("X_CIRC", EXT["X10R_circ"]))):
+                    ops, meta = quantum_circuit(list(P), th, eps, rng, native=True)
+                    meta.update(rep=r, policy=pol, native=True)
+                    recs.append(dict(key=f"{step}_{code}_{''.join(map(str, P))}_{r}", n=n, kind="quantum", P=list(P),
+                                     ops=ops, shots=10, meta=meta))
+    elif step in ("X8", "X9", "X10"):
+        # deployment beyond n = 7 (16-20 qubits): the pruned chip-trained front-end (seed 20) and Bell, both in native
+        # gates with one CZ per site, on 16 uniformly random Paulis; half of the circuits calibrate kappa, half evaluate
+        n = int(step[1:])
+        Pset = []
+        while len(Pset) < 16:
+            P = [int(x) for x in rng.integers(4, size=n)]
+            if any(P) and P not in Pset:
+                Pset.append(P)
+        Pset.sort()
+        pr = json.load(open(os.path.join(HERE, "runs", "prune.json")))["agents"]
+        fronts = [("bell_native", pr["bell"]["theta_pruned"], "bn"),
+                  ("onchip20_pruned", pr["train_s20"]["theta_pruned"], "p20")]
+        EXTRA_MAN["thetas_extra"] = {k: list(map(float, th)) for k, th, _ in fronts}
+        EXTRA_MAN["native"] = [k for k, _, _ in fronts]
+        for pol, th, code in fronts:
+            th = np.array(th, float)
+            for P in Pset:
+                for r in range(int(os.environ.get("X_CIRC", EXT[step + "_circ"]))):
+                    ops, meta = quantum_circuit(list(P), th, eps, rng, native=True)
+                    meta.update(rep=r, policy=pol, native=True)
+                    recs.append(dict(key=f"{step}_{code}_{''.join(map(str, P))}_{r}", n=n, kind="quantum", P=list(P),
+                                     ops=ops, shots=10, meta=meta))
+    elif step in ("CH5", "CH6"):
+        # channel task deployed at n = 5 / 6: the pruned channel agents trained on the chip (runs/prune_channel.json,
+        # native gates, one CZ per circuit half and site) and the analytic reference (Bell-pair input and Bell
+        # measurement), on 16 random Paulis; every circuit is one use of the hidden-Pauli channel
+        n = int(step[2])
+        allP = paulis(n)
+        Pset = [allP[i] for i in sorted(rng.permutation(len(allP))[:16])]
+        pr = json.load(open(os.path.join(HERE, "runs", "prune_channel.json")))["agents"]
+        fronts = [(k, np.array(v["theta_pruned"], float), "ref" if k == "bell_channel" else "c" + k.split("_s")[-1])
+                  for k, v in pr.items() if k == "bell_channel" or (v.get("native_ok") and v.get("info_pruned", 0) > 0.5)]
+        EXTRA_MAN["thetas_extra"] = {k: th.tolist() for k, th, _ in fronts}
+        EXTRA_MAN["native"] = [k for k, _, _ in fronts]; EXTRA_MAN["task"] = "channel"
+        for pol, th, code in fronts:
+            for P in Pset:
+                for r in range(int(os.environ.get("CH_CIRC", EXT[step + "_circ"]))):
+                    ops, meta = channel_circuit(list(P), th[:13], th[13:], rng, native=True)
+                    meta.update(rep=r, policy=pol, native=True)
+                    recs.append(dict(key=f"{step}_{code}_{''.join(map(str, P))}_{r}", n=n, kind="quantum", P=list(P),
+                                     ops=ops, shots=10, meta=meta))
+    elif step in ("CH5A", "CH6A"):
+        # channel task, the agents trained on the chip deployed AS TRAINED: their input circuit W with the general
+        # controlled rotation (compiled by the cloud) and the fixed measurement in native gates; same 16 Paulis and
+        # qubits as CH5 / CH6 (whose analytic reference is analysed together with these)
+        n = int(step[2])
+        m = json.load(open(os.path.join(HERE, "runs", f"CH{n}_origin", "manifest.json")))
+        Pset = sorted({tuple(r["P"]) for r in m["records"]})
+        fronts = []
+        for sd in (70, 71):
+            f = os.path.join(HERE, "runs", f"train_ch_s{sd}.json")
+            if os.path.exists(f):
+                st = json.load(open(f)); b = st.get("best") or st
+                th = np.r_[np.array(b["theta"], float), np.array(st["theta_out_fixed"], float)]
+                if np.mean([h["reward"] for h in st["hist"][-10:]]) > 0.5:
+                    fronts.append((f"train_ch_s{sd}", th, f"c{sd}"))
+        EXTRA_MAN["thetas_extra"] = {k: th.tolist() for k, th, _ in fronts}
+        EXTRA_MAN["task"] = "channel"; EXTRA_MAN["native_out_only"] = True
+        for pol, th, code in fronts:
+            for P in Pset:
+                for r in range(int(os.environ.get("CH_CIRC", EXT[f"CH{n}_circ"]))):
+                    ops, meta = channel_circuit(list(P), th[:13], th[13:], rng, native=False, native_out=True)
+                    meta.update(rep=r, policy=pol, native_in=False, native_out=True)
                     recs.append(dict(key=f"{step}_{code}_{''.join(map(str, P))}_{r}", n=n, kind="quantum", P=list(P),
                                      ops=ops, shots=10, meta=meta))
     elif step == "DR5":
@@ -625,7 +713,8 @@ class OriginRunner:
 # ------------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--step", choices=["S1", "S2", "S3", "S4", "S5", "S6", "D1", "S3P", "S6X", "S5C", "R4", "R5", "T4", "T5", "S5R", "S6R", "S7", "DT5", "DT6", "DT7", "DTC5", "PR5", "PR6", "PR7", "SC3", "SC4", "DR5"])
+    ap.add_argument("--step", choices=["S1", "S2", "S3", "S4", "S5", "S6", "D1", "S3P", "S6X", "S5C", "R4", "R5", "T4", "T5", "S5R", "S6R", "S7", "DT5", "DT6", "DT7", "DTC5", "PR5", "PR6", "PR7", "SC3", "SC4", "DR5", "X8", "X9", "X10", "X10R", "CH5", "CH6", "CH5A", "CH6A"])
+    ap.add_argument("--exclude", default="", help="comma-separated physical qubits not to be used (site selection)")
     ap.add_argument("--batch", type=int, default=BATCH, help="circuits per cloud job (split automatically on errors)")
     ap.add_argument("--mode", choices=["dryrun", "origin"], default="dryrun")
     ap.add_argument("--fetch_chip", action="store_true")
@@ -655,7 +744,7 @@ def main():
         tag += "_" + a.qpu                                    # runs on another chip get their own folder
     out_dir = os.path.join(HERE, "runs", f"{a.step}_{tag}")
     man_f = os.path.join(out_dir, "manifest.json")
-    base = {"S6X": "S6", "S5C": "S5"}.get(a.step)
+    base = {"S6X": "S6", "S5C": "S5", "CH5A": "CH5", "CH6A": "CH6"}.get(a.step)
     base_f = os.path.join(HERE, "runs", f"{base}_{tag}", "manifest.json") if base else None
     if base_f and os.path.exists(base_f):
         old = json.load(open(base_f))                         # extension steps run on the qubits of the step they extend
@@ -666,7 +755,10 @@ def main():
         sites, chip_fetched = old["sites"], old.get("chip_fetched")
         print(f"resuming on the qubits chosen at the start of this step (calibration {chip_fetched})")
     else:
-        sites, chip_fetched = choose_sites(a.chip, max(nmax, 4)), json.load(open(a.chip)).get("fetched")
+        excl = {int(x) for x in a.exclude.split(",") if x.strip()}
+        sites, chip_fetched = choose_sites(a.chip, max(nmax, 4), excl), json.load(open(a.chip)).get("fetched")
+        if excl:
+            EXTRA_MAN["excluded_qubits"] = sorted(excl)
     phys = {n: [s["a"] for s in sites[:n]] + [s["b"] for s in sites[:n]] for n in range(2, max(nmax, 4) + 1)}
     os.makedirs(out_dir, exist_ok=True)
     raw_f, jobs_f = os.path.join(out_dir, "raw.json"), os.path.join(out_dir, "jobs.json")
