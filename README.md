@@ -2,7 +2,7 @@
 
 Code, raw hardware data (source data) and training logs for the manuscript
 
-> *Reward-only learning discovers quantum-memory measurements that beat single-copy limits on a superconducting processor*
+> *Machines can learn to use quantum memory from a single bit of feedback*
 > (anonymous submission, under review).
 
 All hardware experiments ran on the Origin Quantum **WK_C180** superconducting processor through its cloud service in November 2026. Every number and figure in the paper can be recomputed from the files in this repository without access to the hardware.
