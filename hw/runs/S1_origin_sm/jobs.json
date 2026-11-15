@@ -1,0 +1,78 @@
+{
+ "A48F088725977C695FF81E0B2F5864B7": {
+  "keys": [
+   "S1_single_100"
+  ],
+  "shots": 100,
+  "submitted": "2026-11-12 13:03:23",
+  "submitted_unix": 1794459803.607776,
+  "finished": "2026-11-12 13:03:45",
+  "finished_unix": 1794459825.7017334,
+  "info": {
+   "polled_s": 20.85777759552002
+  }
+ },
+ "C03854152419F39F865314D7301078CE": {
+  "keys": [
+   "S1_single_1000"
+  ],
+  "shots": 1000,
+  "submitted": "2026-11-12 13:03:24",
+  "submitted_unix": 1794459804.0683167,
+  "finished": "2026-11-12 13:04:06",
+  "finished_unix": 1794459846.381289,
+  "info": {
+   "polled_s": 20.678555727005005
+  }
+ },
+ "FE678C0169067885741E00EF2E670202": {
+  "keys": [
+   "S1_single_4000"
+  ],
+  "shots": 4000,
+  "submitted": "2026-11-12 13:03:24",
+  "submitted_unix": 1794459804.4199164,
+  "finished": "2026-11-12 13:04:27",
+  "finished_unix": 1794459867.2736878,
+  "info": {
+   "polled_s": 20.891397953033447
+  }
+ },
+ "1B10AD84BD8E4F5FA59CB874D492E670": {
+  "keys": [
+   "S1_batch_0",
+   "S1_batch_1",
+   "S1_batch_2",
+   "S1_batch_3",
+   "S1_batch_4",
+   "S1_batch_5",
+   "S1_batch_6",
+   "S1_batch_7",
+   "S1_batch_8",
+   "S1_batch_9",
+   "S1_batch_10",
+   "S1_batch_11",
+   "S1_batch_12",
+   "S1_batch_13",
+   "S1_batch_14",
+   "S1_batch_15",
+   "S1_batch_16",
+   "S1_batch_17",
+   "S1_batch_18",
+   "S1_batch_19",
+   "S1_batch_20",
+   "S1_batch_21",
+   "S1_batch_22",
+   "S1_batch_23",
+   "S1_batch_24"
+  ],
+  "shots": 100,
+  "submitted": "2026-11-12 13:03:24",
+  "submitted_unix": 1794459804.8289545,
+  "finished": "2026-11-12 13:04:27",
+  "finished_unix": 1794459867.7964315,
+  "info": {
+   "polled_s": 0.5217428207397461
+  }
+ }
+}

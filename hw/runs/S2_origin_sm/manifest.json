@@ -1,0 +1,2057 @@
+{
+ "step": "S2",
+ "mode": "origin",
+ "eps": 1.0,
+ "seed": 2026,
+ "theta": [
+  1.5399938684921577,
+  -1.585078264352667,
+  -3.3406294867425217,
+  -1.6732036470139577,
+  1.575038171174942,
+  3.1253859756492313,
+  3.0633208025618957,
+  1.7308212757354067,
+  -1.5817640723650659,
+  4.49046774937997,
+  2.3437080014039697,
+  -3.268850213280923,
+  2.4920338985242365
+ ],
+ "sites": [
+  {
+   "a": 95,
+   "b": 104,
+   "f_cz": 0.9923,
+   "score": 0.8223181047284613
+  },
+  {
+   "a": 120,
+   "b": 129,
+   "f_cz": 0.9943,
+   "score": 0.8066021112386546
+  },
+  {
+   "a": 102,
+   "b": 111,
+   "f_cz": 0.985,
+   "score": 0.7971771383361159
+  },
+  {
+   "a": 130,
+   "b": 139,
+   "f_cz": 0.9861,
+   "score": 0.7894196765222372
+  }
+ ],
+ "phys": {
+  "2": [
+   95,
+   120,
+   104,
+   129
+  ],
+  "3": [
+   95,
+   120,
+   102,
+   104,
+   129,
+   111
+  ],
+  "4": [
+   95,
+   120,
+   102,
+   130,
+   104,
+   129,
+   111,
+   139
+  ]
+ },
+ "chip_fetched": "2026-11-12 11:46:50",
+ "n_circuits": 120,
+ "records": [
+  {
+   "key": "S2_q_10_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_10_0",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_10_1",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_10_2",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_10_3",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_10_4",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_10_5",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_10_6",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_10_7",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_10_8",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_10_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_10_9",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    0
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_0",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_1",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_2",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_3",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_4",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_5",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_6",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_03_7",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_03_8",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_03_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_03_9",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    0,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     3
+    ],
+    "setting_b": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_22_0",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_22_1",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_22_2",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_22_3",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_22_4",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_22_5",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_22_6",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_22_7",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_22_8",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_22_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_22_9",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     2
+    ],
+    "setting_b": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_0",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_1",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_2",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_3",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_4",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_13_5",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_13_6",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_7",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_8",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_13_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_13_9",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     1,
+     3
+    ],
+    "setting_b": [
+     1,
+     3
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_0",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_1",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_2",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_3",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_4",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_5",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_32_6",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_32_7",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_32_8",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_32_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_32_9",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    3,
+    2
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     3,
+     2
+    ],
+    "setting_b": [
+     3,
+     2
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_0",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_1",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_2",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_3",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_4",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_5",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_21_6",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_21_7",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": -1
+   }
+  },
+  {
+   "key": "S2_c_21_8",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  },
+  {
+   "key": "S2_q_21_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "sign": 1
+   }
+  },
+  {
+   "key": "S2_c_21_9",
+   "n": 2,
+   "kind": "classical",
+   "P": [
+    2,
+    1
+   ],
+   "shots": 200,
+   "meta": {
+    "setting_a": [
+     2,
+     1
+    ],
+    "setting_b": [
+     2,
+     1
+    ]
+   }
+  }
+ ]
+}

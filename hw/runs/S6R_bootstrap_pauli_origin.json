@@ -1,0 +1,65 @@
+{
+ "step": "S6R",
+ "mode": "origin",
+ "n": 6,
+ "B": 50,
+ "level": "pauli",
+ "trials": 300,
+ "single_copy_lower_bound_ideal": 441.520470046403,
+ "results": {
+  "bell_bayes": {
+   "point": 257.4832482820039,
+   "ci95": [
+    171.87782637422583,
+    271.78973139454905
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "bell_score": {
+   "point": 190.22733711156758,
+   "ci95": [
+    152.57020704209975,
+    262.63787588367813
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "learned_bayes": {
+   "point": 253.25853632773965,
+   "ci95": [
+    223.02932661941526,
+    322.6181587601755
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "learned_score": {
+   "point": 289.0318803895372,
+   "ci95": [
+    237.52361799039144,
+    336.29102024717537
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "onchip20_bayes": {
+   "point": 273.2425749780375,
+   "ci95": [
+    203.37566937993913,
+    334.9665918209922
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "onchip20_score": {
+   "point": 322.6197415379787,
+   "ci95": [
+    190.2019203463445,
+    366.8193486832558
+   ],
+   "frac_not_reached": 0.02,
+   "p_below_bound": 0.98
+  }
+ }
+}

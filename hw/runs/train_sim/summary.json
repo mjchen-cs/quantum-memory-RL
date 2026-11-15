@@ -1,0 +1,125 @@
+{
+ "note": "simulated hardware-in-the-loop training, n=2, m=8 pairs, p_dep=0.12; Bayes-optimal Bell reference accuracy 0.79",
+ "runs": [
+  {
+   "run": "tr_S10_s2",
+   "seed": 2,
+   "S": 10,
+   "dec_steps": 3,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": 97,
+   "final_reward": 0.775,
+   "final_vis": 0.952
+  },
+  {
+   "run": "tr_S10_s3",
+   "seed": 3,
+   "S": 10,
+   "dec_steps": 3,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": null,
+   "final_reward": 0.259,
+   "final_vis": 0.837
+  },
+  {
+   "run": "tr_S20_s2",
+   "seed": 2,
+   "S": 20,
+   "dec_steps": 3,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": 130,
+   "final_reward": 0.732,
+   "final_vis": 0.955
+  },
+  {
+   "run": "tr_S20_s3",
+   "seed": 3,
+   "S": 20,
+   "dec_steps": 3,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": null,
+   "final_reward": 0.375,
+   "final_vis": 0.96
+  },
+  {
+   "run": "tr_S20_s4",
+   "seed": 4,
+   "S": 20,
+   "dec_steps": 3,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": 45,
+   "final_reward": 0.672,
+   "final_vis": 0.879
+  },
+  {
+   "run": "tr_S20_s5",
+   "seed": 5,
+   "S": 20,
+   "dec_steps": 3,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": null,
+   "final_reward": 0.217,
+   "final_vis": 0.886
+  },
+  {
+   "run": "tr_d10_s3",
+   "seed": 3,
+   "S": 20,
+   "dec_steps": 10,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": null,
+   "final_reward": 0.247,
+   "final_vis": 0.688
+  },
+  {
+   "run": "tr_d10_s5",
+   "seed": 5,
+   "S": 20,
+   "dec_steps": 10,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": null,
+   "final_reward": 0.201,
+   "final_vis": 0.17
+  },
+  {
+   "run": "tr_d10_s6",
+   "seed": 6,
+   "S": 20,
+   "dec_steps": 10,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": 50,
+   "final_reward": 0.727,
+   "final_vis": 0.897
+  },
+  {
+   "run": "tr_d10_s7",
+   "seed": 7,
+   "S": 20,
+   "dec_steps": 10,
+   "iters": 200,
+   "first_iter_reward_ge_0_6": 35,
+   "final_reward": 0.668,
+   "final_vis": 0.917
+  },
+  {
+   "run": "tr_rand_s0",
+   "seed": 0,
+   "S": 20,
+   "dec_steps": 3,
+   "iters": 400,
+   "first_iter_reward_ge_0_6": 96,
+   "final_reward": 0.745,
+   "final_vis": 0.967
+  },
+  {
+   "run": "tr_rand_s1",
+   "seed": 1,
+   "S": 20,
+   "dec_steps": 3,
+   "iters": 400,
+   "first_iter_reward_ge_0_6": 63,
+   "final_reward": 0.795,
+   "final_vis": 0.988
+  }
+ ]
+}

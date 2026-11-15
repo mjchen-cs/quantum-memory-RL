@@ -1,0 +1,59 @@
+{
+ "5862F97F725403FA10EEC79CE00A8032": {
+  "first_key": "S3_l_2000_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794461214738;8:1794461210581;7:1794461209457;2:1794461211963;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "1350",
+   "startTime": "1794461208063",
+   "totalTime": "6825"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "E7ED477C1C853B73085D9959BAE0B8C6": {
+  "first_key": "S3_l_0101_40",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794461218663;8:1794461210677;7:1794461209757;2:1794461216251;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "1024",
+   "startTime": "1794461208396",
+   "totalTime": "10405"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "8977331A7DFA0AA5557A65B88E9CD1A7": {
+  "first_key": "S3_l_2331_20",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794461230171;8:1794461211513;7:1794461210311;2:1794461227952;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "875",
+   "startTime": "1794461208934",
+   "totalTime": "21396"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ }
+}

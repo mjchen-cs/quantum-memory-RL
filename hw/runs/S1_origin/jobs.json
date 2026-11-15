@@ -1,0 +1,58 @@
+{
+ "3061EC42C680C4FBA802AAD7F5D0EBB8": {
+  "keys": [
+   "S1_single_100"
+  ],
+  "shots": 100,
+  "submitted": "2026-11-12 11:52:45",
+  "submitted_unix": 1794455565.1945198
+ },
+ "84CB6A1738089E8527FF6176A62BD149": {
+  "keys": [
+   "S1_single_1000"
+  ],
+  "shots": 1000,
+  "submitted": "2026-11-12 11:52:45",
+  "submitted_unix": 1794455565.4772527
+ },
+ "750738666543ED95973C0EC289549F49": {
+  "keys": [
+   "S1_single_4000"
+  ],
+  "shots": 4000,
+  "submitted": "2026-11-12 11:52:45",
+  "submitted_unix": 1794455565.7925105
+ },
+ "6A0C8A249F4D5386D11E889DD561076D": {
+  "keys": [
+   "S1_batch_0",
+   "S1_batch_1",
+   "S1_batch_2",
+   "S1_batch_3",
+   "S1_batch_4",
+   "S1_batch_5",
+   "S1_batch_6",
+   "S1_batch_7",
+   "S1_batch_8",
+   "S1_batch_9",
+   "S1_batch_10",
+   "S1_batch_11",
+   "S1_batch_12",
+   "S1_batch_13",
+   "S1_batch_14",
+   "S1_batch_15",
+   "S1_batch_16",
+   "S1_batch_17",
+   "S1_batch_18",
+   "S1_batch_19",
+   "S1_batch_20",
+   "S1_batch_21",
+   "S1_batch_22",
+   "S1_batch_23",
+   "S1_batch_24"
+  ],
+  "shots": 100,
+  "submitted": "2026-11-12 11:52:46",
+  "submitted_unix": 1794455566.2831347
+ }
+}

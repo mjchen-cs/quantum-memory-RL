@@ -1,0 +1,135 @@
+{
+ "0DB0350289C54D147C76C3DFDCDD69FC": {
+  "first_key": "D1_b_1000_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463429779;8:1794463380962;7:1794463379680;2:1794463427437;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "992",
+   "startTime": "1794463285138",
+   "totalTime": "144960"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "8FAF76821259866B0AFBA24C15D5F155": {
+  "first_key": "D1_b_0300_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463442576;8:1794463401088;7:1794463399876;2:1794463438994;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "375",
+   "startTime": "1794463285294",
+   "totalTime": "157977"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "69228393ED5F3C25BA53052A8E0DB637": {
+  "first_key": "D1_b_0002_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463454756;8:1794463428752;7:1794463427652;2:1794463452144;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "1190",
+   "startTime": "1794463285954",
+   "totalTime": "169109"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "D50F56ABB9BD65D052C7E65C5FA50708": {
+  "first_key": "D1_b_3331_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463465789;8:1794463456410;7:1794463455100;2:1794463463673;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "793",
+   "startTime": "1794463286291",
+   "totalTime": "179956"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "38710B29737F64181A6F22767F7CFE96": {
+  "first_key": "D1_i_0200_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463495511;8:1794463483424;7:1794463482198;2:1794463493346;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "854",
+   "startTime": "1794463286679",
+   "totalTime": "209791"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "2CF8896935D8383F4AC58CC5B5E93D36": {
+  "first_key": "D1_i_0001_0",
+  "n_circuits": 100,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463518364;8:1794463511434;7:1794463510496;2:1794463515759;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "1210",
+   "startTime": "1794463287243",
+   "totalTime": "231851"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ },
+ "1860A5BB70F12AF9E18F747080EB3162": {
+  "first_key": "D1_i_2233_0",
+  "n_circuits": 40,
+  "mapping_qubit": "<IndexError: QCloud result field was not returned: mappingQubit>",
+  "src_qubits": "<IndexError: QCloud result field was not returned: srcQubits>",
+  "measure_qubits": "[]",
+  "target_cbits": "<IndexError: QCloud result field was not returned: targetCbits>",
+  "timing_info": {
+   "aioTimeStamp": "9:1794463534513;8:1794463521620;7:1794463521039;2:1794463529624;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "394",
+   "startTime": "1794463287559",
+   "totalTime": "247074"
+  },
+  "n_mapping_qprog": 1,
+  "twoq_gates_first_circuit": {},
+  "mapping_qprog_first": "<IndexError: QCloud result field was not returned: mappingQprog>"
+ }
+}

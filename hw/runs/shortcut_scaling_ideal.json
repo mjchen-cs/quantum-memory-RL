@@ -1,0 +1,5 @@
+{"note": "Ideal-hardware (eps=1, noiseless) Bayes copies for 90% identification, model-based extrapolation of the front-ends learned ON WK_C180 at n=2 (best by reward). shortcut = trained without twirl (train_nt_s20/22.json), evaluated without twirl; onchip = trained with twirl (train_s20/22.json); grid = 40 log-spaced points (coarse). Script: shortcut_scale.py (session scratch).",
+ "copies90": {"2": {"bell": 14, "onchip20": 14, "onchip22": 14, "shortcut20": 54, "shortcut22": 54},
+              "3": {"bell": 22, "onchip20": 22, "onchip22": 22, "shortcut20": 360, "shortcut22": 458},
+              "4": {"bell": 22, "onchip20": 22, "onchip22": 22, "shortcut20": 3024, "shortcut22": 2388},
+              "5": {"bell": 26, "onchip20": 26, "onchip22": 26, "shortcut20": 15794, "shortcut22": 15794}}}

@@ -1,0 +1,68 @@
+{
+ "coupler": [
+  95,
+  104
+ ],
+ "jobs": {
+  "A_pinned_CNOT": "739DAA8E14D5B1296EBFDEC3CC69777A",
+  "B_pinned_CZ": "1DA5E6E598DDCEE8A88D8BAE5EF3C39D",
+  "C_mapped_CZ": "E2BFE7DC573D0273CE3CF5BEE301C85C"
+ },
+ "final": {
+  "A_pinned_CNOT": "FINISHED",
+  "B_pinned_CZ": "FINISHED",
+  "C_mapped_CZ": "FINISHED"
+ },
+ "A_pinned_CNOT": {
+  "probs": [
+   {
+    "00": 0.5684101,
+    "11": 0.4315898
+   }
+  ],
+  "timing": {
+   "aioTimeStamp": "9:1794540137093;8:1794540128727;7:1794540128501;2:1794540135962;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "49",
+   "startTime": "1794540128435",
+   "totalTime": "8782"
+  }
+ },
+ "B_pinned_CZ": {
+  "probs": [
+   {
+    "00": 0.4052922,
+    "01": 0.0,
+    "10": 0.0,
+    "11": 0.5947077
+   }
+  ],
+  "timing": {
+   "aioTimeStamp": "9:1794540147538;8:1794540129187;7:1794540128931;2:1794540146405;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "50",
+   "startTime": "1794540128863",
+   "totalTime": "18781"
+  }
+ },
+ "C_mapped_CZ": {
+  "probs": [
+   {
+    "00": 0.4357088,
+    "01": 0.0,
+    "10": 0.0,
+    "11": 0.5642912
+   }
+  ],
+  "timing": {
+   "aioTimeStamp": "9:1794540158416;8:1794540133044;7:1794540132748;2:1794540157281;",
+   "cirExecuteTime": "null",
+   "pulseTime": "null",
+   "qpuRunTime": "48",
+   "startTime": "1794540129492",
+   "totalTime": "29027"
+  }
+ }
+}

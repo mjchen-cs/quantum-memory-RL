@@ -1,0 +1,20 @@
+{
+ "step": "S5C",
+ "mode": "origin",
+ "n": 5,
+ "B": 100,
+ "level": "pauli",
+ "trials": 400,
+ "single_copy_lower_bound_ideal": 182.96183759028509,
+ "results": {
+  "classical_bayes": {
+   "point": 2866.589963420178,
+   "ci95": [
+    1532.06961447577,
+    3906.7578368059058
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 0.0
+  }
+ }
+}

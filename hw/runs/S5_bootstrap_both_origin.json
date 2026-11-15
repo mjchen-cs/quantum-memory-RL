@@ -1,0 +1,47 @@
+{
+ "step": "S5",
+ "mode": "origin",
+ "n": 5,
+ "B": 300,
+ "level": "both",
+ "trials": 400,
+ "single_copy_lower_bound_ideal": 182.96183759028509,
+ "results": {
+  "bell_bayes": {
+   "point": 122.01703623402332,
+   "ci95": [
+    103.41969075714259,
+    152.68374741391497
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "bell_score": {
+   "point": 138.95217551785652,
+   "ci95": [
+    105.82377833857896,
+    160.03866435450675
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 1.0
+  },
+  "learned_bayes": {
+   "point": 141.86305306724432,
+   "ci95": [
+    135.14347114172443,
+    174.8497570469126
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 0.9966666666666667
+  },
+  "learned_score": {
+   "point": 153.66621645440514,
+   "ci95": [
+    136.55768012089254,
+    184.53382145882938
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 0.9633333333333334
+  }
+ }
+}

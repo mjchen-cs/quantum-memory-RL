@@ -1,0 +1,65 @@
+{
+ "rows": [
+  {
+   "P": "XI",
+   "weight": 1,
+   "two_copy_visibility": 0.8717429852834735,
+   "per_site": 0.8717429852834735,
+   "single_copy_visibility": 0.9855,
+   "per_qubit": 0.9855
+  },
+  {
+   "P": "IZ",
+   "weight": 1,
+   "two_copy_visibility": 0.940621942261721,
+   "per_site": 0.940621942261721,
+   "single_copy_visibility": 0.9629629629629629,
+   "per_qubit": 0.9629629629629629
+  },
+  {
+   "P": "YY",
+   "weight": 2,
+   "two_copy_visibility": 0.9316109280797147,
+   "per_site": 0.9651999420222293,
+   "single_copy_visibility": 0.9655,
+   "per_qubit": 0.982598595561789
+  },
+  {
+   "P": "XZ",
+   "weight": 2,
+   "two_copy_visibility": 0.8755313254667799,
+   "per_site": 0.9356983090007056,
+   "single_copy_visibility": 0.9685314685314685,
+   "per_qubit": 0.9841399638930778
+  },
+  {
+   "P": "ZY",
+   "weight": 2,
+   "two_copy_visibility": 0.9187815502717945,
+   "per_site": 0.958530933393281,
+   "single_copy_visibility": 0.9800099950024987,
+   "per_qubit": 0.9899545418868984
+  },
+  {
+   "P": "YX",
+   "weight": 2,
+   "two_copy_visibility": 0.8953600048904944,
+   "per_site": 0.9462346457885034,
+   "single_copy_visibility": 0.9690154922538731,
+   "per_qubit": 0.9843858452120657
+  }
+ ],
+ "kappa_q": 0.9434282940251122,
+ "kappa_c": 0.9842629045525717,
+ "prediction": {
+  "3": {
+   "quantum": 25.619539737743064,
+   "classical": 161.3365565048598
+  },
+  "4": {
+   "quantum": 41.149924706272564,
+   "classical": 684.1485734998788
+  }
+ },
+ "gate_pass": true
+}

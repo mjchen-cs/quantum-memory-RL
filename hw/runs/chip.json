@@ -1,0 +1,3690 @@
+{
+ "backend": "WK_C180",
+ "available_qubits": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  16,
+  17,
+  18,
+  19,
+  20,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  29,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  85,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126,
+  127,
+  128,
+  129,
+  130,
+  131,
+  132,
+  133,
+  134,
+  135,
+  136,
+  137,
+  138,
+  139,
+  140,
+  141,
+  142,
+  143,
+  144,
+  146,
+  147,
+  148,
+  149,
+  150,
+  151,
+  152,
+  154,
+  155,
+  157,
+  158,
+  159,
+  160,
+  161,
+  162,
+  163,
+  164,
+  165,
+  166,
+  168,
+  169,
+  170,
+  171,
+  172,
+  173,
+  174,
+  175,
+  176,
+  177,
+  178,
+  179
+ ],
+ "double_qubits": [
+  {
+   "qubits": [
+    79,
+    88
+   ],
+   "fidelity": 0.9816
+  },
+  {
+   "qubits": [
+    79,
+    89
+   ],
+   "fidelity": 0.9904
+  },
+  {
+   "qubits": [
+    80,
+    89
+   ],
+   "fidelity": 0.986
+  },
+  {
+   "qubits": [
+    101,
+    110
+   ],
+   "fidelity": 0.9601
+  },
+  {
+   "qubits": [
+    110,
+    119
+   ],
+   "fidelity": 0.9657
+  },
+  {
+   "qubits": [
+    110,
+    120
+   ],
+   "fidelity": 0.9935
+  },
+  {
+   "qubits": [
+    102,
+    111
+   ],
+   "fidelity": 0.985
+  },
+  {
+   "qubits": [
+    111,
+    120
+   ],
+   "fidelity": 0.9845
+  },
+  {
+   "qubits": [
+    111,
+    121
+   ],
+   "fidelity": 0.9925
+  },
+  {
+   "qubits": [
+    103,
+    112
+   ],
+   "fidelity": 0.9882
+  },
+  {
+   "qubits": [
+    112,
+    121
+   ],
+   "fidelity": 0.981
+  },
+  {
+   "qubits": [
+    112,
+    122
+   ],
+   "fidelity": 0.9852
+  },
+  {
+   "qubits": [
+    104,
+    113
+   ],
+   "fidelity": 0.988
+  },
+  {
+   "qubits": [
+    113,
+    122
+   ],
+   "fidelity": 0.9898
+  },
+  {
+   "qubits": [
+    113,
+    123
+   ],
+   "fidelity": 0.9779
+  },
+  {
+   "qubits": [
+    105,
+    114
+   ],
+   "fidelity": 0.9888
+  },
+  {
+   "qubits": [
+    114,
+    123
+   ],
+   "fidelity": 0.9669
+  },
+  {
+   "qubits": [
+    114,
+    124
+   ],
+   "fidelity": 0.9723
+  },
+  {
+   "qubits": [
+    106,
+    115
+   ],
+   "fidelity": 0.9656
+  },
+  {
+   "qubits": [
+    115,
+    124
+   ],
+   "fidelity": 0.9828
+  },
+  {
+   "qubits": [
+    115,
+    125
+   ],
+   "fidelity": 0.9765
+  },
+  {
+   "qubits": [
+    107,
+    116
+   ],
+   "fidelity": 0.9878
+  },
+  {
+   "qubits": [
+    116,
+    125
+   ],
+   "fidelity": 0.958
+  },
+  {
+   "qubits": [
+    81,
+    90
+   ],
+   "fidelity": 0.9654
+  },
+  {
+   "qubits": [
+    90,
+    99
+   ],
+   "fidelity": 0.9928
+  },
+  {
+   "qubits": [
+    108,
+    117
+   ],
+   "fidelity": 0.9788
+  },
+  {
+   "qubits": [
+    117,
+    126
+   ],
+   "fidelity": 0.998
+  },
+  {
+   "qubits": [
+    82,
+    91
+   ],
+   "fidelity": 0.9764
+  },
+  {
+   "qubits": [
+    91,
+    100
+   ],
+   "fidelity": 0.9805
+  },
+  {
+   "qubits": [
+    91,
+    101
+   ],
+   "fidelity": 0.956
+  },
+  {
+   "qubits": [
+    108,
+    118
+   ],
+   "fidelity": 0.9772
+  },
+  {
+   "qubits": [
+    109,
+    118
+   ],
+   "fidelity": 0.9758
+  },
+  {
+   "qubits": [
+    118,
+    127
+   ],
+   "fidelity": 0.9781
+  },
+  {
+   "qubits": [
+    83,
+    92
+   ],
+   "fidelity": 0.9689
+  },
+  {
+   "qubits": [
+    92,
+    101
+   ],
+   "fidelity": 0.9766
+  },
+  {
+   "qubits": [
+    92,
+    102
+   ],
+   "fidelity": 0.9925
+  },
+  {
+   "qubits": [
+    109,
+    119
+   ],
+   "fidelity": 0.9605
+  },
+  {
+   "qubits": [
+    110,
+    119
+   ],
+   "fidelity": 0.9657
+  },
+  {
+   "qubits": [
+    119,
+    128
+   ],
+   "fidelity": 0.9884
+  },
+  {
+   "qubits": [
+    93,
+    102
+   ],
+   "fidelity": 0.9922
+  },
+  {
+   "qubits": [
+    93,
+    103
+   ],
+   "fidelity": 0.9944
+  },
+  {
+   "qubits": [
+    85,
+    94
+   ],
+   "fidelity": 0.9753
+  },
+  {
+   "qubits": [
+    94,
+    103
+   ],
+   "fidelity": 0.9759
+  },
+  {
+   "qubits": [
+    94,
+    104
+   ],
+   "fidelity": 0.9891
+  },
+  {
+   "qubits": [
+    95,
+    104
+   ],
+   "fidelity": 0.9923
+  },
+  {
+   "qubits": [
+    95,
+    105
+   ],
+   "fidelity": 0.9705
+  },
+  {
+   "qubits": [
+    87,
+    96
+   ],
+   "fidelity": 0.9806
+  },
+  {
+   "qubits": [
+    96,
+    105
+   ],
+   "fidelity": 0.9856
+  },
+  {
+   "qubits": [
+    96,
+    106
+   ],
+   "fidelity": 0.9857
+  },
+  {
+   "qubits": [
+    0,
+    10
+   ],
+   "fidelity": 0.9551
+  },
+  {
+   "qubits": [
+    1,
+    10
+   ],
+   "fidelity": 0.9787
+  },
+  {
+   "qubits": [
+    10,
+    19
+   ],
+   "fidelity": 0.9797
+  },
+  {
+   "qubits": [
+    98,
+    107
+   ],
+   "fidelity": 0.9749
+  },
+  {
+   "qubits": [
+    1,
+    11
+   ],
+   "fidelity": 0.9789
+  },
+  {
+   "qubits": [
+    2,
+    11
+   ],
+   "fidelity": 0.9913
+  },
+  {
+   "qubits": [
+    11,
+    20
+   ],
+   "fidelity": 0.9817
+  },
+  {
+   "qubits": [
+    90,
+    99
+   ],
+   "fidelity": 0.9928
+  },
+  {
+   "qubits": [
+    99,
+    108
+   ],
+   "fidelity": 0.9878
+  },
+  {
+   "qubits": [
+    3,
+    13
+   ],
+   "fidelity": 0.9925
+  },
+  {
+   "qubits": [
+    4,
+    13
+   ],
+   "fidelity": 0.9878
+  },
+  {
+   "qubits": [
+    13,
+    22
+   ],
+   "fidelity": 0.9565
+  },
+  {
+   "qubits": [
+    4,
+    14
+   ],
+   "fidelity": 0.9607
+  },
+  {
+   "qubits": [
+    14,
+    23
+   ],
+   "fidelity": 0.985
+  },
+  {
+   "qubits": [
+    6,
+    16
+   ],
+   "fidelity": 0.9785
+  },
+  {
+   "qubits": [
+    7,
+    16
+   ],
+   "fidelity": 0.9728
+  },
+  {
+   "qubits": [
+    16,
+    25
+   ],
+   "fidelity": 0.969
+  },
+  {
+   "qubits": [
+    7,
+    17
+   ],
+   "fidelity": 0.979
+  },
+  {
+   "qubits": [
+    8,
+    17
+   ],
+   "fidelity": 0.9894
+  },
+  {
+   "qubits": [
+    17,
+    26
+   ],
+   "fidelity": 0.9808
+  },
+  {
+   "qubits": [
+    9,
+    18
+   ],
+   "fidelity": 0.9627
+  },
+  {
+   "qubits": [
+    18,
+    27
+   ],
+   "fidelity": 0.9795
+  },
+  {
+   "qubits": [
+    10,
+    19
+   ],
+   "fidelity": 0.9797
+  },
+  {
+   "qubits": [
+    19,
+    29
+   ],
+   "fidelity": 0.9758
+  },
+  {
+   "qubits": [
+    110,
+    120
+   ],
+   "fidelity": 0.9935
+  },
+  {
+   "qubits": [
+    111,
+    120
+   ],
+   "fidelity": 0.9845
+  },
+  {
+   "qubits": [
+    120,
+    129
+   ],
+   "fidelity": 0.9943
+  },
+  {
+   "qubits": [
+    0,
+    9
+   ],
+   "fidelity": 0.9792
+  },
+  {
+   "qubits": [
+    0,
+    10
+   ],
+   "fidelity": 0.9551
+  },
+  {
+   "qubits": [
+    111,
+    121
+   ],
+   "fidelity": 0.9925
+  },
+  {
+   "qubits": [
+    112,
+    121
+   ],
+   "fidelity": 0.981
+  },
+  {
+   "qubits": [
+    1,
+    10
+   ],
+   "fidelity": 0.9787
+  },
+  {
+   "qubits": [
+    1,
+    11
+   ],
+   "fidelity": 0.9789
+  },
+  {
+   "qubits": [
+    112,
+    122
+   ],
+   "fidelity": 0.9852
+  },
+  {
+   "qubits": [
+    113,
+    122
+   ],
+   "fidelity": 0.9898
+  },
+  {
+   "qubits": [
+    122,
+    131
+   ],
+   "fidelity": 0.9913
+  },
+  {
+   "qubits": [
+    2,
+    11
+   ],
+   "fidelity": 0.9913
+  },
+  {
+   "qubits": [
+    113,
+    123
+   ],
+   "fidelity": 0.9779
+  },
+  {
+   "qubits": [
+    114,
+    123
+   ],
+   "fidelity": 0.9669
+  },
+  {
+   "qubits": [
+    123,
+    132
+   ],
+   "fidelity": 0.9775
+  },
+  {
+   "qubits": [
+    3,
+    13
+   ],
+   "fidelity": 0.9925
+  },
+  {
+   "qubits": [
+    114,
+    124
+   ],
+   "fidelity": 0.9723
+  },
+  {
+   "qubits": [
+    115,
+    124
+   ],
+   "fidelity": 0.9828
+  },
+  {
+   "qubits": [
+    124,
+    133
+   ],
+   "fidelity": 0.97
+  },
+  {
+   "qubits": [
+    4,
+    13
+   ],
+   "fidelity": 0.9878
+  },
+  {
+   "qubits": [
+    4,
+    14
+   ],
+   "fidelity": 0.9607
+  },
+  {
+   "qubits": [
+    115,
+    125
+   ],
+   "fidelity": 0.9765
+  },
+  {
+   "qubits": [
+    116,
+    125
+   ],
+   "fidelity": 0.958
+  },
+  {
+   "qubits": [
+    125,
+    134
+   ],
+   "fidelity": 0.9648
+  },
+  {
+   "qubits": [
+    117,
+    126
+   ],
+   "fidelity": 0.998
+  },
+  {
+   "qubits": [
+    6,
+    16
+   ],
+   "fidelity": 0.9785
+  },
+  {
+   "qubits": [
+    118,
+    127
+   ],
+   "fidelity": 0.9781
+  },
+  {
+   "qubits": [
+    127,
+    136
+   ],
+   "fidelity": 0.9827
+  },
+  {
+   "qubits": [
+    7,
+    16
+   ],
+   "fidelity": 0.9728
+  },
+  {
+   "qubits": [
+    7,
+    17
+   ],
+   "fidelity": 0.979
+  },
+  {
+   "qubits": [
+    119,
+    128
+   ],
+   "fidelity": 0.9884
+  },
+  {
+   "qubits": [
+    128,
+    137
+   ],
+   "fidelity": 0.9546
+  },
+  {
+   "qubits": [
+    128,
+    138
+   ],
+   "fidelity": 0.9865
+  },
+  {
+   "qubits": [
+    8,
+    17
+   ],
+   "fidelity": 0.9894
+  },
+  {
+   "qubits": [
+    120,
+    129
+   ],
+   "fidelity": 0.9943
+  },
+  {
+   "qubits": [
+    129,
+    138
+   ],
+   "fidelity": 0.9921
+  },
+  {
+   "qubits": [
+    129,
+    139
+   ],
+   "fidelity": 0.9865
+  },
+  {
+   "qubits": [
+    0,
+    9
+   ],
+   "fidelity": 0.9792
+  },
+  {
+   "qubits": [
+    9,
+    18
+   ],
+   "fidelity": 0.9627
+  },
+  {
+   "qubits": [
+    11,
+    20
+   ],
+   "fidelity": 0.9817
+  },
+  {
+   "qubits": [
+    20,
+    29
+   ],
+   "fidelity": 0.9805
+  },
+  {
+   "qubits": [
+    13,
+    22
+   ],
+   "fidelity": 0.9565
+  },
+  {
+   "qubits": [
+    22,
+    32
+   ],
+   "fidelity": 0.971
+  },
+  {
+   "qubits": [
+    14,
+    23
+   ],
+   "fidelity": 0.985
+  },
+  {
+   "qubits": [
+    23,
+    32
+   ],
+   "fidelity": 0.9787
+  },
+  {
+   "qubits": [
+    23,
+    33
+   ],
+   "fidelity": 0.9819
+  },
+  {
+   "qubits": [
+    16,
+    25
+   ],
+   "fidelity": 0.969
+  },
+  {
+   "qubits": [
+    25,
+    34
+   ],
+   "fidelity": 0.9748
+  },
+  {
+   "qubits": [
+    25,
+    35
+   ],
+   "fidelity": 0.9866
+  },
+  {
+   "qubits": [
+    17,
+    26
+   ],
+   "fidelity": 0.9808
+  },
+  {
+   "qubits": [
+    26,
+    35
+   ],
+   "fidelity": 0.9751
+  },
+  {
+   "qubits": [
+    18,
+    27
+   ],
+   "fidelity": 0.9795
+  },
+  {
+   "qubits": [
+    19,
+    29
+   ],
+   "fidelity": 0.9758
+  },
+  {
+   "qubits": [
+    20,
+    29
+   ],
+   "fidelity": 0.9805
+  },
+  {
+   "qubits": [
+    29,
+    38
+   ],
+   "fidelity": 0.9616
+  },
+  {
+   "qubits": [
+    130,
+    139
+   ],
+   "fidelity": 0.9861
+  },
+  {
+   "qubits": [
+    122,
+    131
+   ],
+   "fidelity": 0.9913
+  },
+  {
+   "qubits": [
+    131,
+    140
+   ],
+   "fidelity": 0.9819
+  },
+  {
+   "qubits": [
+    131,
+    141
+   ],
+   "fidelity": 0.9763
+  },
+  {
+   "qubits": [
+    123,
+    132
+   ],
+   "fidelity": 0.9775
+  },
+  {
+   "qubits": [
+    132,
+    141
+   ],
+   "fidelity": 0.9772
+  },
+  {
+   "qubits": [
+    132,
+    142
+   ],
+   "fidelity": 0.977
+  },
+  {
+   "qubits": [
+    124,
+    133
+   ],
+   "fidelity": 0.97
+  },
+  {
+   "qubits": [
+    133,
+    142
+   ],
+   "fidelity": 0.9835
+  },
+  {
+   "qubits": [
+    133,
+    143
+   ],
+   "fidelity": 0.9691
+  },
+  {
+   "qubits": [
+    125,
+    134
+   ],
+   "fidelity": 0.9648
+  },
+  {
+   "qubits": [
+    135,
+    144
+   ],
+   "fidelity": 0.981
+  },
+  {
+   "qubits": [
+    127,
+    136
+   ],
+   "fidelity": 0.9827
+  },
+  {
+   "qubits": [
+    128,
+    137
+   ],
+   "fidelity": 0.9546
+  },
+  {
+   "qubits": [
+    128,
+    138
+   ],
+   "fidelity": 0.9865
+  },
+  {
+   "qubits": [
+    129,
+    138
+   ],
+   "fidelity": 0.9921
+  },
+  {
+   "qubits": [
+    138,
+    147
+   ],
+   "fidelity": 0.9929
+  },
+  {
+   "qubits": [
+    129,
+    139
+   ],
+   "fidelity": 0.9865
+  },
+  {
+   "qubits": [
+    130,
+    139
+   ],
+   "fidelity": 0.9861
+  },
+  {
+   "qubits": [
+    139,
+    148
+   ],
+   "fidelity": 0.9806
+  },
+  {
+   "qubits": [
+    22,
+    32
+   ],
+   "fidelity": 0.971
+  },
+  {
+   "qubits": [
+    23,
+    32
+   ],
+   "fidelity": 0.9787
+  },
+  {
+   "qubits": [
+    32,
+    41
+   ],
+   "fidelity": 0.9794
+  },
+  {
+   "qubits": [
+    23,
+    33
+   ],
+   "fidelity": 0.9819
+  },
+  {
+   "qubits": [
+    33,
+    42
+   ],
+   "fidelity": 0.9705
+  },
+  {
+   "qubits": [
+    25,
+    34
+   ],
+   "fidelity": 0.9748
+  },
+  {
+   "qubits": [
+    25,
+    35
+   ],
+   "fidelity": 0.9866
+  },
+  {
+   "qubits": [
+    26,
+    35
+   ],
+   "fidelity": 0.9751
+  },
+  {
+   "qubits": [
+    35,
+    44
+   ],
+   "fidelity": 0.9913
+  },
+  {
+   "qubits": [
+    36,
+    45
+   ],
+   "fidelity": 0.9744
+  },
+  {
+   "qubits": [
+    36,
+    46
+   ],
+   "fidelity": 0.9574
+  },
+  {
+   "qubits": [
+    37,
+    46
+   ],
+   "fidelity": 0.9756
+  },
+  {
+   "qubits": [
+    37,
+    47
+   ],
+   "fidelity": 0.9997
+  },
+  {
+   "qubits": [
+    29,
+    38
+   ],
+   "fidelity": 0.9616
+  },
+  {
+   "qubits": [
+    38,
+    47
+   ],
+   "fidelity": 0.9846
+  },
+  {
+   "qubits": [
+    38,
+    48
+   ],
+   "fidelity": 0.9903
+  },
+  {
+   "qubits": [
+    39,
+    49
+   ],
+   "fidelity": 0.9827
+  },
+  {
+   "qubits": [
+    131,
+    140
+   ],
+   "fidelity": 0.9819
+  },
+  {
+   "qubits": [
+    140,
+    149
+   ],
+   "fidelity": 0.9537
+  },
+  {
+   "qubits": [
+    131,
+    141
+   ],
+   "fidelity": 0.9763
+  },
+  {
+   "qubits": [
+    132,
+    141
+   ],
+   "fidelity": 0.9772
+  },
+  {
+   "qubits": [
+    141,
+    150
+   ],
+   "fidelity": 0.9783
+  },
+  {
+   "qubits": [
+    132,
+    142
+   ],
+   "fidelity": 0.977
+  },
+  {
+   "qubits": [
+    133,
+    142
+   ],
+   "fidelity": 0.9835
+  },
+  {
+   "qubits": [
+    142,
+    151
+   ],
+   "fidelity": 0.9771
+  },
+  {
+   "qubits": [
+    133,
+    143
+   ],
+   "fidelity": 0.9691
+  },
+  {
+   "qubits": [
+    143,
+    152
+   ],
+   "fidelity": 0.9657
+  },
+  {
+   "qubits": [
+    135,
+    144
+   ],
+   "fidelity": 0.981
+  },
+  {
+   "qubits": [
+    146,
+    155
+   ],
+   "fidelity": 0.9549
+  },
+  {
+   "qubits": [
+    138,
+    147
+   ],
+   "fidelity": 0.9929
+  },
+  {
+   "qubits": [
+    147,
+    157
+   ],
+   "fidelity": 0.9774
+  },
+  {
+   "qubits": [
+    139,
+    148
+   ],
+   "fidelity": 0.9806
+  },
+  {
+   "qubits": [
+    140,
+    149
+   ],
+   "fidelity": 0.9537
+  },
+  {
+   "qubits": [
+    149,
+    158
+   ],
+   "fidelity": 0.9798
+  },
+  {
+   "qubits": [
+    149,
+    159
+   ],
+   "fidelity": 0.9789
+  },
+  {
+   "qubits": [
+    40,
+    49
+   ],
+   "fidelity": 0.9984
+  },
+  {
+   "qubits": [
+    40,
+    50
+   ],
+   "fidelity": 0.9663
+  },
+  {
+   "qubits": [
+    32,
+    41
+   ],
+   "fidelity": 0.9794
+  },
+  {
+   "qubits": [
+    41,
+    51
+   ],
+   "fidelity": 0.9834
+  },
+  {
+   "qubits": [
+    33,
+    42
+   ],
+   "fidelity": 0.9705
+  },
+  {
+   "qubits": [
+    42,
+    51
+   ],
+   "fidelity": 0.9875
+  },
+  {
+   "qubits": [
+    43,
+    52
+   ],
+   "fidelity": 0.9552
+  },
+  {
+   "qubits": [
+    35,
+    44
+   ],
+   "fidelity": 0.9913
+  },
+  {
+   "qubits": [
+    36,
+    45
+   ],
+   "fidelity": 0.9744
+  },
+  {
+   "qubits": [
+    36,
+    46
+   ],
+   "fidelity": 0.9574
+  },
+  {
+   "qubits": [
+    37,
+    46
+   ],
+   "fidelity": 0.9756
+  },
+  {
+   "qubits": [
+    37,
+    47
+   ],
+   "fidelity": 0.9997
+  },
+  {
+   "qubits": [
+    38,
+    47
+   ],
+   "fidelity": 0.9846
+  },
+  {
+   "qubits": [
+    47,
+    56
+   ],
+   "fidelity": 0.973
+  },
+  {
+   "qubits": [
+    38,
+    48
+   ],
+   "fidelity": 0.9903
+  },
+  {
+   "qubits": [
+    39,
+    49
+   ],
+   "fidelity": 0.9827
+  },
+  {
+   "qubits": [
+    40,
+    49
+   ],
+   "fidelity": 0.9984
+  },
+  {
+   "qubits": [
+    49,
+    58
+   ],
+   "fidelity": 0.977
+  },
+  {
+   "qubits": [
+    141,
+    150
+   ],
+   "fidelity": 0.9783
+  },
+  {
+   "qubits": [
+    150,
+    159
+   ],
+   "fidelity": 0.9705
+  },
+  {
+   "qubits": [
+    150,
+    160
+   ],
+   "fidelity": 0.9946
+  },
+  {
+   "qubits": [
+    142,
+    151
+   ],
+   "fidelity": 0.9771
+  },
+  {
+   "qubits": [
+    143,
+    152
+   ],
+   "fidelity": 0.9657
+  },
+  {
+   "qubits": [
+    146,
+    155
+   ],
+   "fidelity": 0.9549
+  },
+  {
+   "qubits": [
+    155,
+    164
+   ],
+   "fidelity": 0.9844
+  },
+  {
+   "qubits": [
+    147,
+    157
+   ],
+   "fidelity": 0.9774
+  },
+  {
+   "qubits": [
+    157,
+    166
+   ],
+   "fidelity": 0.9837
+  },
+  {
+   "qubits": [
+    149,
+    158
+   ],
+   "fidelity": 0.9798
+  },
+  {
+   "qubits": [
+    149,
+    159
+   ],
+   "fidelity": 0.9789
+  },
+  {
+   "qubits": [
+    150,
+    159
+   ],
+   "fidelity": 0.9705
+  },
+  {
+   "qubits": [
+    40,
+    50
+   ],
+   "fidelity": 0.9663
+  },
+  {
+   "qubits": [
+    50,
+    59
+   ],
+   "fidelity": 0.9904
+  },
+  {
+   "qubits": [
+    41,
+    51
+   ],
+   "fidelity": 0.9834
+  },
+  {
+   "qubits": [
+    42,
+    51
+   ],
+   "fidelity": 0.9875
+  },
+  {
+   "qubits": [
+    51,
+    60
+   ],
+   "fidelity": 0.9652
+  },
+  {
+   "qubits": [
+    43,
+    52
+   ],
+   "fidelity": 0.9552
+  },
+  {
+   "qubits": [
+    52,
+    61
+   ],
+   "fidelity": 0.9787
+  },
+  {
+   "qubits": [
+    54,
+    63
+   ],
+   "fidelity": 0.9853
+  },
+  {
+   "qubits": [
+    54,
+    64
+   ],
+   "fidelity": 0.9828
+  },
+  {
+   "qubits": [
+    55,
+    64
+   ],
+   "fidelity": 0.97
+  },
+  {
+   "qubits": [
+    47,
+    56
+   ],
+   "fidelity": 0.973
+  },
+  {
+   "qubits": [
+    56,
+    65
+   ],
+   "fidelity": 0.9855
+  },
+  {
+   "qubits": [
+    56,
+    66
+   ],
+   "fidelity": 0.9854
+  },
+  {
+   "qubits": [
+    57,
+    66
+   ],
+   "fidelity": 0.9712
+  },
+  {
+   "qubits": [
+    49,
+    58
+   ],
+   "fidelity": 0.977
+  },
+  {
+   "qubits": [
+    58,
+    68
+   ],
+   "fidelity": 0.9631
+  },
+  {
+   "qubits": [
+    50,
+    59
+   ],
+   "fidelity": 0.9904
+  },
+  {
+   "qubits": [
+    59,
+    68
+   ],
+   "fidelity": 0.9797
+  },
+  {
+   "qubits": [
+    59,
+    69
+   ],
+   "fidelity": 0.9777
+  },
+  {
+   "qubits": [
+    150,
+    160
+   ],
+   "fidelity": 0.9946
+  },
+  {
+   "qubits": [
+    163,
+    173
+   ],
+   "fidelity": 0.9639
+  },
+  {
+   "qubits": [
+    155,
+    164
+   ],
+   "fidelity": 0.9844
+  },
+  {
+   "qubits": [
+    164,
+    173
+   ],
+   "fidelity": 0.9733
+  },
+  {
+   "qubits": [
+    164,
+    174
+   ],
+   "fidelity": 0.9846
+  },
+  {
+   "qubits": [
+    165,
+    174
+   ],
+   "fidelity": 0.9641
+  },
+  {
+   "qubits": [
+    165,
+    175
+   ],
+   "fidelity": 0.991
+  },
+  {
+   "qubits": [
+    157,
+    166
+   ],
+   "fidelity": 0.9837
+  },
+  {
+   "qubits": [
+    166,
+    175
+   ],
+   "fidelity": 0.9752
+  },
+  {
+   "qubits": [
+    166,
+    176
+   ],
+   "fidelity": 0.987
+  },
+  {
+   "qubits": [
+    168,
+    178
+   ],
+   "fidelity": 0.9598
+  },
+  {
+   "qubits": [
+    169,
+    178
+   ],
+   "fidelity": 0.9829
+  },
+  {
+   "qubits": [
+    169,
+    179
+   ],
+   "fidelity": 0.9989
+  },
+  {
+   "qubits": [
+    51,
+    60
+   ],
+   "fidelity": 0.9652
+  },
+  {
+   "qubits": [
+    60,
+    69
+   ],
+   "fidelity": 0.98
+  },
+  {
+   "qubits": [
+    52,
+    61
+   ],
+   "fidelity": 0.9787
+  },
+  {
+   "qubits": [
+    61,
+    70
+   ],
+   "fidelity": 0.9974
+  },
+  {
+   "qubits": [
+    61,
+    71
+   ],
+   "fidelity": 0.9877
+  },
+  {
+   "qubits": [
+    62,
+    71
+   ],
+   "fidelity": 0.9797
+  },
+  {
+   "qubits": [
+    54,
+    63
+   ],
+   "fidelity": 0.9853
+  },
+  {
+   "qubits": [
+    63,
+    72
+   ],
+   "fidelity": 0.9582
+  },
+  {
+   "qubits": [
+    54,
+    64
+   ],
+   "fidelity": 0.9828
+  },
+  {
+   "qubits": [
+    55,
+    64
+   ],
+   "fidelity": 0.97
+  },
+  {
+   "qubits": [
+    64,
+    73
+   ],
+   "fidelity": 0.9855
+  },
+  {
+   "qubits": [
+    56,
+    65
+   ],
+   "fidelity": 0.9855
+  },
+  {
+   "qubits": [
+    56,
+    66
+   ],
+   "fidelity": 0.9854
+  },
+  {
+   "qubits": [
+    57,
+    66
+   ],
+   "fidelity": 0.9712
+  },
+  {
+   "qubits": [
+    66,
+    75
+   ],
+   "fidelity": 0.9597
+  },
+  {
+   "qubits": [
+    58,
+    68
+   ],
+   "fidelity": 0.9631
+  },
+  {
+   "qubits": [
+    59,
+    68
+   ],
+   "fidelity": 0.9797
+  },
+  {
+   "qubits": [
+    68,
+    77
+   ],
+   "fidelity": 0.979
+  },
+  {
+   "qubits": [
+    59,
+    69
+   ],
+   "fidelity": 0.9777
+  },
+  {
+   "qubits": [
+    60,
+    69
+   ],
+   "fidelity": 0.98
+  },
+  {
+   "qubits": [
+    170,
+    179
+   ],
+   "fidelity": 0.9765
+  },
+  {
+   "qubits": [
+    163,
+    173
+   ],
+   "fidelity": 0.9639
+  },
+  {
+   "qubits": [
+    164,
+    173
+   ],
+   "fidelity": 0.9733
+  },
+  {
+   "qubits": [
+    164,
+    174
+   ],
+   "fidelity": 0.9846
+  },
+  {
+   "qubits": [
+    165,
+    174
+   ],
+   "fidelity": 0.9641
+  },
+  {
+   "qubits": [
+    165,
+    175
+   ],
+   "fidelity": 0.991
+  },
+  {
+   "qubits": [
+    166,
+    175
+   ],
+   "fidelity": 0.9752
+  },
+  {
+   "qubits": [
+    166,
+    176
+   ],
+   "fidelity": 0.987
+  },
+  {
+   "qubits": [
+    168,
+    178
+   ],
+   "fidelity": 0.9598
+  },
+  {
+   "qubits": [
+    169,
+    178
+   ],
+   "fidelity": 0.9829
+  },
+  {
+   "qubits": [
+    169,
+    179
+   ],
+   "fidelity": 0.9989
+  },
+  {
+   "qubits": [
+    170,
+    179
+   ],
+   "fidelity": 0.9765
+  },
+  {
+   "qubits": [
+    61,
+    70
+   ],
+   "fidelity": 0.9974
+  },
+  {
+   "qubits": [
+    70,
+    79
+   ],
+   "fidelity": 0.9654
+  },
+  {
+   "qubits": [
+    61,
+    71
+   ],
+   "fidelity": 0.9877
+  },
+  {
+   "qubits": [
+    62,
+    71
+   ],
+   "fidelity": 0.9797
+  },
+  {
+   "qubits": [
+    71,
+    80
+   ],
+   "fidelity": 0.9772
+  },
+  {
+   "qubits": [
+    63,
+    72
+   ],
+   "fidelity": 0.9582
+  },
+  {
+   "qubits": [
+    72,
+    81
+   ],
+   "fidelity": 0.9801
+  },
+  {
+   "qubits": [
+    64,
+    73
+   ],
+   "fidelity": 0.9855
+  },
+  {
+   "qubits": [
+    73,
+    82
+   ],
+   "fidelity": 0.9826
+  },
+  {
+   "qubits": [
+    73,
+    83
+   ],
+   "fidelity": 0.9683
+  },
+  {
+   "qubits": [
+    74,
+    83
+   ],
+   "fidelity": 0.9641
+  },
+  {
+   "qubits": [
+    66,
+    75
+   ],
+   "fidelity": 0.9597
+  },
+  {
+   "qubits": [
+    75,
+    85
+   ],
+   "fidelity": 0.9829
+  },
+  {
+   "qubits": [
+    68,
+    77
+   ],
+   "fidelity": 0.979
+  },
+  {
+   "qubits": [
+    77,
+    87
+   ],
+   "fidelity": 0.9693
+  },
+  {
+   "qubits": [
+    70,
+    79
+   ],
+   "fidelity": 0.9654
+  },
+  {
+   "qubits": [
+    79,
+    88
+   ],
+   "fidelity": 0.9816
+  },
+  {
+   "qubits": [
+    79,
+    89
+   ],
+   "fidelity": 0.9904
+  },
+  {
+   "qubits": [
+    91,
+    100
+   ],
+   "fidelity": 0.9805
+  },
+  {
+   "qubits": [
+    100,
+    109
+   ],
+   "fidelity": 0.9724
+  },
+  {
+   "qubits": [
+    91,
+    101
+   ],
+   "fidelity": 0.956
+  },
+  {
+   "qubits": [
+    92,
+    101
+   ],
+   "fidelity": 0.9766
+  },
+  {
+   "qubits": [
+    101,
+    110
+   ],
+   "fidelity": 0.9601
+  },
+  {
+   "qubits": [
+    92,
+    102
+   ],
+   "fidelity": 0.9925
+  },
+  {
+   "qubits": [
+    93,
+    102
+   ],
+   "fidelity": 0.9922
+  },
+  {
+   "qubits": [
+    102,
+    111
+   ],
+   "fidelity": 0.985
+  },
+  {
+   "qubits": [
+    93,
+    103
+   ],
+   "fidelity": 0.9944
+  },
+  {
+   "qubits": [
+    94,
+    103
+   ],
+   "fidelity": 0.9759
+  },
+  {
+   "qubits": [
+    103,
+    112
+   ],
+   "fidelity": 0.9882
+  },
+  {
+   "qubits": [
+    94,
+    104
+   ],
+   "fidelity": 0.9891
+  },
+  {
+   "qubits": [
+    95,
+    104
+   ],
+   "fidelity": 0.9923
+  },
+  {
+   "qubits": [
+    104,
+    113
+   ],
+   "fidelity": 0.988
+  },
+  {
+   "qubits": [
+    95,
+    105
+   ],
+   "fidelity": 0.9705
+  },
+  {
+   "qubits": [
+    96,
+    105
+   ],
+   "fidelity": 0.9856
+  },
+  {
+   "qubits": [
+    105,
+    114
+   ],
+   "fidelity": 0.9888
+  },
+  {
+   "qubits": [
+    96,
+    106
+   ],
+   "fidelity": 0.9857
+  },
+  {
+   "qubits": [
+    106,
+    115
+   ],
+   "fidelity": 0.9656
+  },
+  {
+   "qubits": [
+    71,
+    80
+   ],
+   "fidelity": 0.9772
+  },
+  {
+   "qubits": [
+    80,
+    89
+   ],
+   "fidelity": 0.986
+  },
+  {
+   "qubits": [
+    98,
+    107
+   ],
+   "fidelity": 0.9749
+  },
+  {
+   "qubits": [
+    107,
+    116
+   ],
+   "fidelity": 0.9878
+  },
+  {
+   "qubits": [
+    72,
+    81
+   ],
+   "fidelity": 0.9801
+  },
+  {
+   "qubits": [
+    81,
+    90
+   ],
+   "fidelity": 0.9654
+  },
+  {
+   "qubits": [
+    99,
+    108
+   ],
+   "fidelity": 0.9878
+  },
+  {
+   "qubits": [
+    108,
+    117
+   ],
+   "fidelity": 0.9788
+  },
+  {
+   "qubits": [
+    108,
+    118
+   ],
+   "fidelity": 0.9772
+  },
+  {
+   "qubits": [
+    73,
+    82
+   ],
+   "fidelity": 0.9826
+  },
+  {
+   "qubits": [
+    82,
+    91
+   ],
+   "fidelity": 0.9764
+  },
+  {
+   "qubits": [
+    100,
+    109
+   ],
+   "fidelity": 0.9724
+  },
+  {
+   "qubits": [
+    109,
+    118
+   ],
+   "fidelity": 0.9758
+  },
+  {
+   "qubits": [
+    109,
+    119
+   ],
+   "fidelity": 0.9605
+  },
+  {
+   "qubits": [
+    73,
+    83
+   ],
+   "fidelity": 0.9683
+  },
+  {
+   "qubits": [
+    74,
+    83
+   ],
+   "fidelity": 0.9641
+  },
+  {
+   "qubits": [
+    83,
+    92
+   ],
+   "fidelity": 0.9689
+  },
+  {
+   "qubits": [
+    75,
+    85
+   ],
+   "fidelity": 0.9829
+  },
+  {
+   "qubits": [
+    85,
+    94
+   ],
+   "fidelity": 0.9753
+  },
+  {
+   "qubits": [
+    77,
+    87
+   ],
+   "fidelity": 0.9693
+  },
+  {
+   "qubits": [
+    87,
+    96
+   ],
+   "fidelity": 0.9806
+  }
+ ],
+ "single_qubits": [
+  {
+   "qubit": "0",
+   "gate_fidelity": 0.0,
+   "readout_fidelity": 0.948,
+   "t1": 43.155,
+   "t2": 2.509
+  },
+  {
+   "qubit": "1",
+   "gate_fidelity": 0.9982,
+   "readout_fidelity": 0.8813,
+   "t1": 33.148,
+   "t2": 3.008
+  },
+  {
+   "qubit": "2",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.8259,
+   "t1": 28.564,
+   "t2": 5.363
+  },
+  {
+   "qubit": "3",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9417,
+   "t1": 27.247,
+   "t2": 4.554
+  },
+  {
+   "qubit": "4",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9802,
+   "t1": 89.122,
+   "t2": 5.386
+  },
+  {
+   "qubit": "5",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9677,
+   "t1": 35.573,
+   "t2": 3.278
+  },
+  {
+   "qubit": "6",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.929,
+   "t1": 28.919,
+   "t2": 3.221
+  },
+  {
+   "qubit": "7",
+   "gate_fidelity": 0.9994,
+   "readout_fidelity": 0.9597,
+   "t1": 45.56,
+   "t2": 8.968
+  },
+  {
+   "qubit": "8",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.9763,
+   "t1": 43.005,
+   "t2": 5.395
+  },
+  {
+   "qubit": "9",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.94,
+   "t1": 33.764,
+   "t2": 5.682
+  },
+  {
+   "qubit": "10",
+   "gate_fidelity": 0.9962,
+   "readout_fidelity": 0.9845,
+   "t1": 75.305,
+   "t2": 3.874
+  },
+  {
+   "qubit": "11",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9696,
+   "t1": 58.86,
+   "t2": 3.136
+  },
+  {
+   "qubit": "12",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.6888,
+   "t1": 10.101,
+   "t2": 7.833
+  },
+  {
+   "qubit": "13",
+   "gate_fidelity": 0.9984,
+   "readout_fidelity": 0.9576,
+   "t1": 29.056,
+   "t2": 1.611
+  },
+  {
+   "qubit": "14",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9429,
+   "t1": 26.161,
+   "t2": 3.897
+  },
+  {
+   "qubit": "16",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.9746,
+   "t1": 32.199,
+   "t2": 3.609
+  },
+  {
+   "qubit": "17",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9457,
+   "t1": 30.516,
+   "t2": 2.124
+  },
+  {
+   "qubit": "18",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.9669,
+   "t1": 52.849,
+   "t2": 2.406
+  },
+  {
+   "qubit": "19",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9242,
+   "t1": 48.298,
+   "t2": 2.809
+  },
+  {
+   "qubit": "20",
+   "gate_fidelity": 0.9984,
+   "readout_fidelity": 0.8008,
+   "t1": 21.169,
+   "t2": 4.21
+  },
+  {
+   "qubit": "22",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.9082,
+   "t1": 35.383,
+   "t2": 6.2
+  },
+  {
+   "qubit": "23",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9642,
+   "t1": 11.097,
+   "t2": 3.303
+  },
+  {
+   "qubit": "24",
+   "gate_fidelity": 0.9978,
+   "readout_fidelity": 0.9792,
+   "t1": 21.018,
+   "t2": 3.216
+  },
+  {
+   "qubit": "25",
+   "gate_fidelity": 0.9982,
+   "readout_fidelity": 0.9737,
+   "t1": 44.688,
+   "t2": 3.693
+  },
+  {
+   "qubit": "26",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.9392,
+   "t1": 63.241,
+   "t2": 5.523
+  },
+  {
+   "qubit": "27",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.8662,
+   "t1": 28.216,
+   "t2": 2.63
+  },
+  {
+   "qubit": "29",
+   "gate_fidelity": 0.9994,
+   "readout_fidelity": 0.9277,
+   "t1": 35.421,
+   "t2": 7.111
+  },
+  {
+   "qubit": "31",
+   "gate_fidelity": 0.9987,
+   "readout_fidelity": 0.8885,
+   "t1": 46.912,
+   "t2": 2.422
+  },
+  {
+   "qubit": "32",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.9716,
+   "t1": 17.95,
+   "t2": 6.778
+  },
+  {
+   "qubit": "33",
+   "gate_fidelity": 0.9978,
+   "readout_fidelity": 0.8311,
+   "t1": 27.807,
+   "t2": 2.259
+  },
+  {
+   "qubit": "34",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.9366,
+   "t1": 64.555,
+   "t2": 2.782
+  },
+  {
+   "qubit": "35",
+   "gate_fidelity": 0.9938,
+   "readout_fidelity": 0.8261,
+   "t1": 12.206,
+   "t2": 2.861
+  },
+  {
+   "qubit": "36",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.7793,
+   "t1": 58.316,
+   "t2": 5.303
+  },
+  {
+   "qubit": "37",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.8505,
+   "t1": 38.157,
+   "t2": 2.82
+  },
+  {
+   "qubit": "38",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.8487,
+   "t1": 35.166,
+   "t2": 3.473
+  },
+  {
+   "qubit": "39",
+   "gate_fidelity": 0.9969,
+   "readout_fidelity": 0.6258,
+   "t1": 10.384,
+   "t2": 3.342
+  },
+  {
+   "qubit": "40",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.9604,
+   "t1": 25.401,
+   "t2": 7.758
+  },
+  {
+   "qubit": "41",
+   "gate_fidelity": 0.9995,
+   "readout_fidelity": 0.7985,
+   "t1": 33.93,
+   "t2": 3.094
+  },
+  {
+   "qubit": "42",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.7799,
+   "t1": 70.398,
+   "t2": 3.278
+  },
+  {
+   "qubit": "43",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.6345,
+   "t1": 36.434,
+   "t2": 4.922
+  },
+  {
+   "qubit": "44",
+   "gate_fidelity": 0.9994,
+   "readout_fidelity": 0.8417,
+   "t1": 35.249,
+   "t2": 3.084
+  },
+  {
+   "qubit": "45",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.9757,
+   "t1": 14.476,
+   "t2": 8.07
+  },
+  {
+   "qubit": "46",
+   "gate_fidelity": 0.9982,
+   "readout_fidelity": 0.9696,
+   "t1": 44.793,
+   "t2": 3.586
+  },
+  {
+   "qubit": "47",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.848,
+   "t1": 15.061,
+   "t2": 2.305
+  },
+  {
+   "qubit": "48",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9528,
+   "t1": 64.77,
+   "t2": 4.821
+  },
+  {
+   "qubit": "49",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9478,
+   "t1": 47.598,
+   "t2": 4.11
+  },
+  {
+   "qubit": "50",
+   "gate_fidelity": 0.9984,
+   "readout_fidelity": 0.7918,
+   "t1": 17.988,
+   "t2": 2.651
+  },
+  {
+   "qubit": "51",
+   "gate_fidelity": 0.9977,
+   "readout_fidelity": 0.9603,
+   "t1": 15.3,
+   "t2": 4.34
+  },
+  {
+   "qubit": "52",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9718,
+   "t1": 45.905,
+   "t2": 9.42
+  },
+  {
+   "qubit": "54",
+   "gate_fidelity": 0.995,
+   "readout_fidelity": 0.9701,
+   "t1": 67.174,
+   "t2": 3.93
+  },
+  {
+   "qubit": "55",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9635,
+   "t1": 21.076,
+   "t2": 4.348
+  },
+  {
+   "qubit": "56",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9053,
+   "t1": 34.175,
+   "t2": 5.208
+  },
+  {
+   "qubit": "57",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9612,
+   "t1": 35.986,
+   "t2": 3.361
+  },
+  {
+   "qubit": "58",
+   "gate_fidelity": 0.9966,
+   "readout_fidelity": 0.9291,
+   "t1": 43.831,
+   "t2": 2.836
+  },
+  {
+   "qubit": "59",
+   "gate_fidelity": 0.9983,
+   "readout_fidelity": 0.8613,
+   "t1": 37.4,
+   "t2": 2.659
+  },
+  {
+   "qubit": "60",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9046,
+   "t1": 63.907,
+   "t2": 4.202
+  },
+  {
+   "qubit": "61",
+   "gate_fidelity": 0.9983,
+   "readout_fidelity": 0.9687,
+   "t1": 35.566,
+   "t2": 2.266
+  },
+  {
+   "qubit": "62",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.9652,
+   "t1": 27.567,
+   "t2": 3.214
+  },
+  {
+   "qubit": "63",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.8577,
+   "t1": 29.942,
+   "t2": 7.982
+  },
+  {
+   "qubit": "64",
+   "gate_fidelity": 0.998,
+   "readout_fidelity": 0.9282,
+   "t1": 41.78,
+   "t2": 3.307
+  },
+  {
+   "qubit": "65",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.668,
+   "t1": 18.005,
+   "t2": 3.935
+  },
+  {
+   "qubit": "66",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.8817,
+   "t1": 13.068,
+   "t2": 4.16
+  },
+  {
+   "qubit": "68",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.8577,
+   "t1": 38.305,
+   "t2": 2.865
+  },
+  {
+   "qubit": "69",
+   "gate_fidelity": 0.9971,
+   "readout_fidelity": 0.8865,
+   "t1": 36.07,
+   "t2": 3.811
+  },
+  {
+   "qubit": "70",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.8565,
+   "t1": 53.612,
+   "t2": 4.248
+  },
+  {
+   "qubit": "71",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.7295,
+   "t1": 34.951,
+   "t2": 4.739
+  },
+  {
+   "qubit": "72",
+   "gate_fidelity": 0.9977,
+   "readout_fidelity": 0.9088,
+   "t1": 38.959,
+   "t2": 5.047
+  },
+  {
+   "qubit": "73",
+   "gate_fidelity": 0.9983,
+   "readout_fidelity": 0.9391,
+   "t1": 48.307,
+   "t2": 4.818
+  },
+  {
+   "qubit": "74",
+   "gate_fidelity": 0.9976,
+   "readout_fidelity": 0.8532,
+   "t1": 60.894,
+   "t2": 5.721
+  },
+  {
+   "qubit": "75",
+   "gate_fidelity": 0.998,
+   "readout_fidelity": 0.9776,
+   "t1": 57.666,
+   "t2": 3.809
+  },
+  {
+   "qubit": "77",
+   "gate_fidelity": 0.9982,
+   "readout_fidelity": 0.9879,
+   "t1": 39.285,
+   "t2": 4.851
+  },
+  {
+   "qubit": "78",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9564,
+   "t1": 17.661,
+   "t2": 4.697
+  },
+  {
+   "qubit": "79",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9497,
+   "t1": 69.054,
+   "t2": 4.156
+  },
+  {
+   "qubit": "80",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9883,
+   "t1": 41.407,
+   "t2": 3.572
+  },
+  {
+   "qubit": "81",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.9647,
+   "t1": 58.676,
+   "t2": 8.319
+  },
+  {
+   "qubit": "82",
+   "gate_fidelity": 0.9958,
+   "readout_fidelity": 0.7672,
+   "t1": 33.522,
+   "t2": 6.78
+  },
+  {
+   "qubit": "83",
+   "gate_fidelity": 0.9975,
+   "readout_fidelity": 0.9026,
+   "t1": 38.229,
+   "t2": 2.682
+  },
+  {
+   "qubit": "85",
+   "gate_fidelity": 0.9975,
+   "readout_fidelity": 0.9336,
+   "t1": 27.931,
+   "t2": 1.907
+  },
+  {
+   "qubit": "87",
+   "gate_fidelity": 0.9975,
+   "readout_fidelity": 0.7434,
+   "t1": 14.095,
+   "t2": 3.478
+  },
+  {
+   "qubit": "88",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9851,
+   "t1": 24.933,
+   "t2": 4.025
+  },
+  {
+   "qubit": "89",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9684,
+   "t1": 44.262,
+   "t2": 3.891
+  },
+  {
+   "qubit": "90",
+   "gate_fidelity": 0.997,
+   "readout_fidelity": 0.7385,
+   "t1": 30.657,
+   "t2": 4.291
+  },
+  {
+   "qubit": "91",
+   "gate_fidelity": 0.9979,
+   "readout_fidelity": 0.9243,
+   "t1": 51.859,
+   "t2": 4.452
+  },
+  {
+   "qubit": "92",
+   "gate_fidelity": 0.998,
+   "readout_fidelity": 0.9865,
+   "t1": 27.741,
+   "t2": 2.911
+  },
+  {
+   "qubit": "93",
+   "gate_fidelity": 0.9987,
+   "readout_fidelity": 0.9707,
+   "t1": 53.066,
+   "t2": 3.586
+  },
+  {
+   "qubit": "94",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.9731,
+   "t1": 14.909,
+   "t2": 4.367
+  },
+  {
+   "qubit": "95",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.9916,
+   "t1": 24.005,
+   "t2": 4.955
+  },
+  {
+   "qubit": "96",
+   "gate_fidelity": 0.9981,
+   "readout_fidelity": 0.6152,
+   "t1": 46.467,
+   "t2": 3.671
+  },
+  {
+   "qubit": "98",
+   "gate_fidelity": 0.9975,
+   "readout_fidelity": 0.9837,
+   "t1": 54.379,
+   "t2": 3.567
+  },
+  {
+   "qubit": "99",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.7488,
+   "t1": 38.556,
+   "t2": 5.554
+  },
+  {
+   "qubit": "100",
+   "gate_fidelity": 0.9961,
+   "readout_fidelity": 0.9206,
+   "t1": 31.58,
+   "t2": 10.331
+  },
+  {
+   "qubit": "101",
+   "gate_fidelity": 0.9982,
+   "readout_fidelity": 0.9273,
+   "t1": 46.73,
+   "t2": 4.225
+  },
+  {
+   "qubit": "102",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.9898,
+   "t1": 19.9,
+   "t2": 4.587
+  },
+  {
+   "qubit": "103",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9475,
+   "t1": 29.06,
+   "t2": 7.556
+  },
+  {
+   "qubit": "104",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.995,
+   "t1": 34.074,
+   "t2": 5.449
+  },
+  {
+   "qubit": "105",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9495,
+   "t1": 22.564,
+   "t2": 4.885
+  },
+  {
+   "qubit": "106",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9572,
+   "t1": 19.954,
+   "t2": 4.752
+  },
+  {
+   "qubit": "107",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.8976,
+   "t1": 16.619,
+   "t2": 3.561
+  },
+  {
+   "qubit": "108",
+   "gate_fidelity": 0.9981,
+   "readout_fidelity": 0.8851,
+   "t1": 44.407,
+   "t2": 4.197
+  },
+  {
+   "qubit": "109",
+   "gate_fidelity": 0.9983,
+   "readout_fidelity": 0.8709,
+   "t1": 38.503,
+   "t2": 4.727
+  },
+  {
+   "qubit": "110",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9897,
+   "t1": 29.628,
+   "t2": 3.91
+  },
+  {
+   "qubit": "111",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.9762,
+   "t1": 42.419,
+   "t2": 10.41
+  },
+  {
+   "qubit": "112",
+   "gate_fidelity": 0.9981,
+   "readout_fidelity": 0.9584,
+   "t1": 32.692,
+   "t2": 4.431
+  },
+  {
+   "qubit": "113",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.9755,
+   "t1": 21.08,
+   "t2": 4.883
+  },
+  {
+   "qubit": "114",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9821,
+   "t1": 20.001,
+   "t2": 3.177
+  },
+  {
+   "qubit": "115",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.7861,
+   "t1": 63.452,
+   "t2": 4.088
+  },
+  {
+   "qubit": "116",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9797,
+   "t1": 33.476,
+   "t2": 3.184
+  },
+  {
+   "qubit": "117",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.8639,
+   "t1": 24.902,
+   "t2": 4.133
+  },
+  {
+   "qubit": "118",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9239,
+   "t1": 57.963,
+   "t2": 2.438
+  },
+  {
+   "qubit": "119",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9921,
+   "t1": 28.386,
+   "t2": 3.763
+  },
+  {
+   "qubit": "120",
+   "gate_fidelity": 0.9994,
+   "readout_fidelity": 0.9754,
+   "t1": 29.755,
+   "t2": 8.354
+  },
+  {
+   "qubit": "121",
+   "gate_fidelity": 0.9981,
+   "readout_fidelity": 0.9647,
+   "t1": 39.535,
+   "t2": 9.936
+  },
+  {
+   "qubit": "122",
+   "gate_fidelity": 0.9996,
+   "readout_fidelity": 0.9483,
+   "t1": 35.782,
+   "t2": 6.761
+  },
+  {
+   "qubit": "123",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9832,
+   "t1": 63.685,
+   "t2": 4.761
+  },
+  {
+   "qubit": "124",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.9425,
+   "t1": 38.917,
+   "t2": 5.495
+  },
+  {
+   "qubit": "125",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.8525,
+   "t1": 40.379,
+   "t2": 2.846
+  },
+  {
+   "qubit": "126",
+   "gate_fidelity": 0.9984,
+   "readout_fidelity": 0.8625,
+   "t1": 28.971,
+   "t2": 3.346
+  },
+  {
+   "qubit": "127",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.8898,
+   "t1": 36.031,
+   "t2": 3.655
+  },
+  {
+   "qubit": "128",
+   "gate_fidelity": 0.9979,
+   "readout_fidelity": 0.9913,
+   "t1": 17.372,
+   "t2": 4.883
+  },
+  {
+   "qubit": "129",
+   "gate_fidelity": 0.9995,
+   "readout_fidelity": 0.9756,
+   "t1": 38.497,
+   "t2": 6.275
+  },
+  {
+   "qubit": "130",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.9811,
+   "t1": 40.296,
+   "t2": 4.474
+  },
+  {
+   "qubit": "131",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9915,
+   "t1": 26.857,
+   "t2": 3.882
+  },
+  {
+   "qubit": "132",
+   "gate_fidelity": 0.9972,
+   "readout_fidelity": 0.938,
+   "t1": 8.339,
+   "t2": 2.366
+  },
+  {
+   "qubit": "133",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9238,
+   "t1": 22.387,
+   "t2": 2.539
+  },
+  {
+   "qubit": "134",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.9781,
+   "t1": 23.334,
+   "t2": 5.551
+  },
+  {
+   "qubit": "135",
+   "gate_fidelity": 0.9952,
+   "readout_fidelity": 0.9076,
+   "t1": 10.568,
+   "t2": 3.465
+  },
+  {
+   "qubit": "136",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.7258,
+   "t1": 37.657,
+   "t2": 5.185
+  },
+  {
+   "qubit": "137",
+   "gate_fidelity": 0.9983,
+   "readout_fidelity": 0.8075,
+   "t1": 22.846,
+   "t2": 3.429
+  },
+  {
+   "qubit": "138",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.9842,
+   "t1": 32.874,
+   "t2": 4.689
+  },
+  {
+   "qubit": "139",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.9894,
+   "t1": 15.442,
+   "t2": 6.254
+  },
+  {
+   "qubit": "140",
+   "gate_fidelity": 0.9994,
+   "readout_fidelity": 0.9781,
+   "t1": 38.362,
+   "t2": 5.253
+  },
+  {
+   "qubit": "141",
+   "gate_fidelity": 0.9984,
+   "readout_fidelity": 0.9884,
+   "t1": 25.767,
+   "t2": 5.452
+  },
+  {
+   "qubit": "142",
+   "gate_fidelity": 0.9978,
+   "readout_fidelity": 0.9581,
+   "t1": 29.498,
+   "t2": 5.021
+  },
+  {
+   "qubit": "143",
+   "gate_fidelity": 0.9977,
+   "readout_fidelity": 0.9139,
+   "t1": 39.539,
+   "t2": 3.929
+  },
+  {
+   "qubit": "144",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.8438,
+   "t1": 64.288,
+   "t2": 4.518
+  },
+  {
+   "qubit": "146",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.8655,
+   "t1": 24.901,
+   "t2": 6.433
+  },
+  {
+   "qubit": "147",
+   "gate_fidelity": 0.9949,
+   "readout_fidelity": 0.9199,
+   "t1": 12.175,
+   "t2": 5.111
+  },
+  {
+   "qubit": "148",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.911,
+   "t1": 33.53,
+   "t2": 3.303
+  },
+  {
+   "qubit": "149",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.9449,
+   "t1": 27.693,
+   "t2": 4.218
+  },
+  {
+   "qubit": "150",
+   "gate_fidelity": 0.9983,
+   "readout_fidelity": 0.9749,
+   "t1": 41.328,
+   "t2": 2.375
+  },
+  {
+   "qubit": "151",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.8484,
+   "t1": 75.684,
+   "t2": 5.14
+  },
+  {
+   "qubit": "152",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.9508,
+   "t1": 22.834,
+   "t2": 3.75
+  },
+  {
+   "qubit": "154",
+   "gate_fidelity": 0.9981,
+   "readout_fidelity": 0.5509,
+   "t1": 31.342,
+   "t2": 3.871
+  },
+  {
+   "qubit": "155",
+   "gate_fidelity": 0.9991,
+   "readout_fidelity": 0.9179,
+   "t1": 35.173,
+   "t2": 5.267
+  },
+  {
+   "qubit": "157",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.9846,
+   "t1": 23.196,
+   "t2": 6.564
+  },
+  {
+   "qubit": "158",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.6806,
+   "t1": 15.103,
+   "t2": 4.029
+  },
+  {
+   "qubit": "159",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.8001,
+   "t1": 63.953,
+   "t2": 2.747
+  },
+  {
+   "qubit": "160",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.969,
+   "t1": 24.631,
+   "t2": 9.41
+  },
+  {
+   "qubit": "161",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.6651,
+   "t1": 36.122,
+   "t2": 4.853
+  },
+  {
+   "qubit": "162",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.545,
+   "t1": 30.599,
+   "t2": 9.844
+  },
+  {
+   "qubit": "163",
+   "gate_fidelity": 0.9986,
+   "readout_fidelity": 0.7411,
+   "t1": 38.896,
+   "t2": 5.989
+  },
+  {
+   "qubit": "164",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.8926,
+   "t1": 23.083,
+   "t2": 5.307
+  },
+  {
+   "qubit": "165",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.916,
+   "t1": 24.82,
+   "t2": 4.054
+  },
+  {
+   "qubit": "166",
+   "gate_fidelity": 0.9984,
+   "readout_fidelity": 0.4988,
+   "t1": 31.973,
+   "t2": 2.962
+  },
+  {
+   "qubit": "168",
+   "gate_fidelity": 0.9979,
+   "readout_fidelity": 0.5045,
+   "t1": 28.937,
+   "t2": 3.768
+  },
+  {
+   "qubit": "169",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.524,
+   "t1": 24.671,
+   "t2": 3.1
+  },
+  {
+   "qubit": "170",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.5016,
+   "t1": 17.913,
+   "t2": 3.836
+  },
+  {
+   "qubit": "171",
+   "gate_fidelity": 0.9985,
+   "readout_fidelity": 0.4755,
+   "t1": 17.924,
+   "t2": 4.659
+  },
+  {
+   "qubit": "172",
+   "gate_fidelity": 0.9988,
+   "readout_fidelity": 0.617,
+   "t1": 34.218,
+   "t2": 4.052
+  },
+  {
+   "qubit": "173",
+   "gate_fidelity": 0.999,
+   "readout_fidelity": 0.4833,
+   "t1": 28.606,
+   "t2": 5.052
+  },
+  {
+   "qubit": "174",
+   "gate_fidelity": 0.9987,
+   "readout_fidelity": 0.6846,
+   "t1": 25.141,
+   "t2": 4.877
+  },
+  {
+   "qubit": "175",
+   "gate_fidelity": 0.9979,
+   "readout_fidelity": 0.5278,
+   "t1": 50.579,
+   "t2": 4.642
+  },
+  {
+   "qubit": "176",
+   "gate_fidelity": 0.9993,
+   "readout_fidelity": 0.5089,
+   "t1": 54.723,
+   "t2": 4.48
+  },
+  {
+   "qubit": "177",
+   "gate_fidelity": 0.9992,
+   "readout_fidelity": 0.5126,
+   "t1": 36.019,
+   "t2": 4.312
+  },
+  {
+   "qubit": "178",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.5023,
+   "t1": 22.313,
+   "t2": 4.797
+  },
+  {
+   "qubit": "179",
+   "gate_fidelity": 0.9989,
+   "readout_fidelity": 0.5146,
+   "t1": 59.923,
+   "t2": 3.91
+  }
+ ],
+ "fetched": "2026-11-15 08:44:54"
+}

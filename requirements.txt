@@ -1,0 +1,5 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+torch>=2.0          # hw_train.py, hw_detect_train.py (training only)
+pyqpanda3           # only needed to submit circuits to Origin Quantum hardware (hw_run.py --mode origin, hw_train.py --backend origin)

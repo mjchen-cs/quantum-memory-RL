@@ -1,0 +1,29 @@
+{
+ "step": "S6X",
+ "mode": "origin",
+ "n": 6,
+ "B": 50,
+ "level": "pauli",
+ "trials": 300,
+ "single_copy_lower_bound_ideal": 441.520470046403,
+ "results": {
+  "learned_bayes": {
+   "point": 327.99999999999983,
+   "ci95": [
+    279.74820100450444,
+    418.8695139875056
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 0.98
+  },
+  "learned_score": {
+   "point": 408.15397269580325,
+   "ci95": [
+    300.10938097861674,
+    484.4422798516541
+   ],
+   "frac_not_reached": 0.0,
+   "p_below_bound": 0.94
+  }
+ }
+}

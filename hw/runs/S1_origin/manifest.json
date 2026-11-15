@@ -1,0 +1,469 @@
+{
+ "step": "S1",
+ "mode": "origin",
+ "eps": 1.0,
+ "seed": 2026,
+ "theta": [
+  1.5399938684921577,
+  -1.585078264352667,
+  -3.3406294867425217,
+  -1.6732036470139577,
+  1.575038171174942,
+  3.1253859756492313,
+  3.0633208025618957,
+  1.7308212757354067,
+  -1.5817640723650659,
+  4.49046774937997,
+  2.3437080014039697,
+  -3.268850213280923,
+  2.4920338985242365
+ ],
+ "sites": [
+  {
+   "a": 95,
+   "b": 104,
+   "f_cz": 0.9923,
+   "score": 0.8223181047284613
+  },
+  {
+   "a": 120,
+   "b": 129,
+   "f_cz": 0.9943,
+   "score": 0.8066021112386546
+  },
+  {
+   "a": 102,
+   "b": 111,
+   "f_cz": 0.985,
+   "score": 0.7971771383361159
+  },
+  {
+   "a": 130,
+   "b": 139,
+   "f_cz": 0.9861,
+   "score": 0.7894196765222372
+  }
+ ],
+ "phys": {
+  "2": [
+   95,
+   120,
+   104,
+   129
+  ],
+  "3": [
+   95,
+   120,
+   102,
+   104,
+   129,
+   111
+  ],
+  "4": [
+   95,
+   120,
+   102,
+   130,
+   104,
+   129,
+   111,
+   139
+  ]
+ },
+ "chip_fetched": "2026-11-12 11:46:50",
+ "n_circuits": 28,
+ "records": [
+  {
+   "key": "S1_single_100",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "g100"
+  },
+  {
+   "key": "S1_single_1000",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 1000,
+   "meta": {
+    "sign": -1
+   },
+   "group": "g1000"
+  },
+  {
+   "key": "S1_single_4000",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 4000,
+   "meta": {
+    "sign": -1
+   },
+   "group": "g4000"
+  },
+  {
+   "key": "S1_batch_0",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_1",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_2",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_3",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_4",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_5",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_6",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_7",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_8",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_9",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_10",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_11",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_12",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_13",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_14",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_15",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_16",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_17",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_18",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_19",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_20",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_21",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_22",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_23",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": 1
+   },
+   "group": "batch"
+  },
+  {
+   "key": "S1_batch_24",
+   "n": 2,
+   "kind": "quantum",
+   "P": [
+    1,
+    3
+   ],
+   "shots": 100,
+   "meta": {
+    "sign": -1
+   },
+   "group": "batch"
+  }
+ ]
+}
