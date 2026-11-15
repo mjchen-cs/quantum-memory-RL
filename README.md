@@ -1,4 +1,4 @@
-# Reward-only learning discovers quantum-memory measurements on a superconducting processor
+# Machines can learn to use quantum memory from a single bit of feedback
 
 Code, raw hardware data (source data) and training logs for the manuscript
 
