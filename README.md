@@ -171,7 +171,7 @@ python hw_train.py --backend origin --frontend channel_in13 --iters 80 --seed 70
 ## Notes
 
 - The detection analysis was corrected during the study (one random shot per circuit, no reuse of circuits); `hw_detect.py` is the corrected version used in the paper.
-- Absolute local paths in the training logs were removed when this archive was built.
+
 
 ## License
 
